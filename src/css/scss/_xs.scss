@@ -1,0 +1,1542 @@
+@media (min-width: 0) {
+    // BODY //
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "dunbar-text", sans-serif;
+    }
+
+    body {
+        margin: 0 auto;
+        background-color: $body;
+        position: relative;
+    }
+
+    // WEBGL //
+    .webgl {
+        position: fixed;
+        top: 0;
+        left: 0;
+        outline: none;
+    }
+
+    // SECTION 1 //
+    .section1 {
+        width: 100%;
+        display: grid;
+        place-items: center;
+        background-color: $sec1-color;
+
+        .container {
+            height: 900px;
+            width: 95.5%;
+            max-width: 1600px;
+            display: grid;
+            place-items: center;
+
+            border: 3px solid $sec1-text;
+
+            background: url("../../images/elements-graphiques/chats/illustrations/cat1.png") right bottom no-repeat, url("../../images/elements-graphiques/plante2.png") left bottom no-repeat;
+            background-size: 100%, 30%;
+
+            .content {
+                height: 96%;
+                width: 96%;
+
+                border: 3px solid $sec1-text;
+
+                position: relative;
+
+                nav {
+                    // height: calc(115px / 2);
+                    width: 100%;
+
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+
+                    a:not(:first-child),
+                    a:not(:last-child) {
+                        font-size: $a-xs;
+                        font-weight: 600;
+                        font-display: swap;
+                    }
+
+                    a:nth-child(2),
+                    a:nth-child(3),
+                    a:nth-child(4) {
+                        margin-bottom: 15px;
+                        margin-left: 15px;
+
+                        &:hover {
+                            border-bottom: 3px solid $sec1-text;
+                        }
+                    }
+
+                    a:nth-child(5) {
+                        width: 150px;
+                        text-align: center;
+                        font-weight: 800;
+                        margin-bottom: 30px;
+                        margin-left: 15px;
+                        color: $sec1-color;
+                        background-color: $sec1-text;
+
+                        &:hover {
+                            outline: 3px solid $sec1-text;
+                            outline-offset: 5px;
+                            color: $sec1-color;
+                            background-color: $sec1-text;
+                        }
+                    }
+
+                    #home {
+
+                        img {
+                            height: 25px;
+                            width: 25px;
+                        }
+                    }
+
+                    .icon {
+
+                        i {
+                            font-style: normal;
+                            color: $sec1-text;
+                        }
+                    }
+                }
+
+                .titre {
+                    height: 100%;
+                    width: 100%;
+
+                    .chafe {
+                        height: 50%;
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        padding-top: calc(115px / 2);
+
+                        img {
+                            height: auto;
+                            width: 90%;
+                        }
+                    }
+
+                    .soustitre {
+                        height: 8%;
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        h3 {
+                            text-transform: uppercase;
+                            font-size: $h3-xs;
+                            font-display: swap;
+                            color: $sec1-text;
+                        }
+
+                        span {
+                            height: 8px;
+                            width: 8px;
+                            border-radius: 4px;
+                        }
+
+                        #pointOne {
+                            margin-right: 10px;
+                            background-color: $sec1-text;
+                        }
+
+                        #pointTwo {
+                            margin-left: 10px;
+                            background-color: $sec1-text;
+                        }
+                    }
+
+                    .pattesBas {
+                        height: 42%;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    // SECTION 2 //
+    .section2 {
+        width: 100%;
+        display: grid;
+        place-items: center;
+
+        background-image: url('../../images/elements-graphiques/vague.svg'), url("../../images/elements-graphiques/sol.svg"), url("../../images/elements-graphiques/briques.png");
+        background-position: top left, bottom center, top left;
+        background-repeat: no-repeat, no-repeat, no-repeat;
+        background-size: contain, contain, 100%;
+
+        .container {
+            height: 1000px;
+            width: 95.5%;
+            max-width: 1600px;
+            display: flex;
+            background: url("../../images/elements-graphiques/grande-fleur.png") 30px 380px no-repeat;
+            background-size: 110%;
+
+            position: relative;
+
+            .contentOne {
+                height: 100%;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+
+                .titre {
+                    height: 45%;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    align-items: center;
+                    padding-top: 150px;
+
+                    h2 {
+                        font-size: $h2-xs;
+                        font-display: swap;
+                        font-weight: 900;
+                        font-family: "santelia-script", sans-serif;
+                        margin-bottom: 30px;
+                        color: $sec2-color;
+                    }
+
+                    p {
+                        font-size: $p-xs;
+                        font-display: swap;
+                        font-weight: 400;
+                    }
+                }
+
+                .horaires {
+                    height: 45%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: flex-end;
+
+                    table {
+                        width: 100%;
+
+                        tr {
+
+                            td {
+                                height: 35px;
+                                font-size: $h3-xs;
+                                font-display: swap;
+
+                                &:first-child {
+                                    width: 30%;
+                                    font-weight: 600;
+                                }
+
+                                &:last-child {
+                                    width: 70%;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .btnMenu {
+                    height: 20%;
+                    display: flex;
+                    padding-top: 10px;
+
+                    button {
+                        height: 50px;
+                        width: 200px;
+                        font-size: $btn-xs;
+                        font-display: swap;
+                        font-weight: 600;
+                        border: 3px solid $sec2-color;
+                        color: $sec2-color;
+                        background-color: transparent;
+
+                        &:hover {
+                            outline: 3px solid $sec2-color;
+                            outline-offset: 5px;
+                            color: $sec2-text;
+                            background-color: $sec2-color;
+                        }
+                    }
+                }
+            }
+
+            .contentTwo {
+                height: 100%;
+                width: 100%;
+
+                position: absolute;
+                z-index: -1;
+            }
+        }
+    }
+
+    // SECTION 3 //
+    .section3 {
+        width: 100%;
+        display: grid;
+        place-items: center;
+        padding: 50px 0;
+        background-image: url("../../images/elements-graphiques/coffee-min.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-color: $sec3-color;
+
+        .container {
+            min-height: 815px;
+            width: 75%;
+            max-width: 1600px;
+
+            .titre {
+                height: 15%;
+                width: 100%;
+                display: grid;
+                place-items: center;
+
+                h2 {
+                    text-align: center;
+                    font-size: $h2-xs;
+                    font-display: swap;
+                    font-family: "santelia-script", sans-serif;
+                    color: $sec3-text;
+                }
+            }
+
+            .content {
+                height: 80%;
+                width: 100%;
+                display: grid;
+                grid-template-columns: auto;
+                gap: 30px;
+                place-items: center;
+                justify-content: space-evenly;
+
+                .border {
+                    height: 250px;
+                    width: 250px;
+                    display: grid;
+                    place-items: center;
+                    border: 3px solid $sec3-text;
+
+                    .card {
+                        height: 95%;
+                        width: 95%;
+                        padding: 20px;
+                        background-color: $sec3-text;
+
+                        position: relative;
+
+                        img {
+                            height: 100%;
+                            width: 100%;
+                            object-fit: cover;
+                        }
+
+                        .item1 {
+                            height: 50%;
+                            width: 100%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            border-bottom: 3px solid $sec3-color;
+
+                            img {
+                                height: 90%;
+                                width: 100%;
+                                object-fit: cover;
+                            }
+                        }
+
+                        .item2 {
+                            height: 50%;
+                            width: 100%;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            padding: 0 10px;
+
+                            .nom {
+                                height: 20%;
+                                width: 100%;
+                                padding-top: 10px;
+
+                                h3 {
+                                    text-align: center;
+                                    text-transform: uppercase;
+                                    font-size: $h3-xs;
+                                    font-display: swap;
+                                    font-weight: 900;
+                                }
+                            }
+
+                            .description {
+                                height: 50%;
+                                width: 100%;
+
+                                p {
+                                    font-size: $desc-xs;
+                                    font-display: swap;
+                                }
+                            }
+
+                            hr {
+                                height: 4px;
+                                width: 105%;
+                                background-color: $sec3-color;
+                            }
+
+                            .caracteristiques {
+                                height: 30%;
+                                width: 100%;
+                                display: flex;
+
+                                .age {
+                                    height: 100%;
+                                    width: 50%;
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: space-around;
+                                    align-items: center;
+
+                                    h4 {
+                                        font-size: 14px;
+                                        font-display: swap;
+                                        font-weight: 600;
+                                    }
+
+                                    p {
+                                        font-size: $age-xs;
+                                        font-display: swap;
+                                    }
+                                }
+
+                                .gender {
+                                    height: 100%;
+                                    width: 50%;
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: space-around;
+                                    align-items: center;
+
+                                    h4 {
+                                        font-size: 14px;
+                                        font-display: swap;
+                                        font-weight: 600;
+                                    }
+
+                                    #test {
+                                        height: 40px;
+                                        width: 40px;
+                                        background-color: red;
+                                    }
+                                }
+                            }
+                        }
+
+                        .cross {
+                            height: 25px;
+                            width: 25px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            padding-bottom: 2px;
+                            border-radius: 40px;
+                            border: 2px solid $sec3-color;
+                            box-sizing: border-box;
+
+                            position: absolute;
+                            top: 3px;
+                            right: 3px;
+
+                            span {
+                                margin: 0;
+                                padding: 0;
+                                color: $sec2-color;
+                            }
+
+                            &:hover {
+                                background-color: $sec3-text;
+
+                                span {
+                                    color: $sec3-color;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // SECTION 4 //
+    .section4 {
+        width: 100%;
+        display: grid;
+        place-items: center;
+        background-color: $sec4-color;
+
+        .container {
+            height: 1260px;
+            width: 100%;
+            max-width: 1600px;
+
+            .mur {
+                height: 450px;
+                width: 100%;
+                background-image: url("../../images/elements-graphiques/papier-peint.png");
+                background-repeat: repeat-x;
+                background-size: contain;
+                background-color: whitesmoke;
+
+                position: relative;
+
+                .poutre {
+                    height: 50px;
+                    width: 100%;
+                    background-color: white;
+                }
+
+                .poutre1 {
+                    border-bottom: 1px solid $blacky;
+                }
+
+                .poutre2,
+                .poutre3 {
+                    border-top: 1px solid $blacky;
+                }
+
+                .papierPeint {
+                    height: 300px;
+                }
+
+                .logoKopi {
+                    height: 100px;
+                    width: 100px;
+                    display: grid;
+                    place-items: center;
+
+                    position: absolute;
+                    top: 60px;
+                    right: 0;
+
+                    .contentLogo {
+                        height: 100px;
+                        width: 100px;
+                        border-radius: 200px;
+                        background-image: url("../../images/kopi/kopi-n.png");
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: 85%;
+                        background-color: $sec4-color;
+                    }
+                }
+
+                .titreKopi {
+                    height: 80px;
+                    width: 300px;
+                    display: grid;
+                    place-items: center;
+
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    background-color: $sec4-color;
+
+                    h2 {
+                        font-size: $h2-xs;
+                        font-display: swap;
+                        font-weight: 900;
+                        font-family: "santelia-script", sans-serif;
+                        color: $sec4-text;
+                    }
+                }
+            }
+
+            .elementsGraphiques {
+                height: 290px;
+                width: 100%;
+                background-color: $sec4-color;
+
+                position: relative;
+
+                #cafetiere {
+                    object-fit: contain;
+                    height: 250px;
+                    width: auto;
+
+                    position: absolute;
+                    top: -170px;
+                    left: 0;
+                }
+
+                #grandSac {
+                    object-fit: contain;
+                    height: 200px;
+                    width: auto;
+
+                    position: absolute;
+                    top: 30px;
+                    right: 5px;
+                }
+
+                #petitSac {
+                    object-fit: contain;
+                    height: 130px;
+                    width: auto;
+
+                    position: absolute;
+                    top: 130px;
+                    right: 0;
+                }
+            }
+
+            .kopi {
+                height: 520px;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                background-color: $sec4-color;
+
+                .description {
+                    height: 65%;
+                    width: 100%;
+                    display: grid;
+                    place-items: center;
+                    padding: 0 10px;
+
+                    p {
+                        width: 100%;
+                        font-size: $p-xs;
+                        font-display: swap;
+                        font-weight: 400;
+                    }
+                }
+
+                .btnKopi {
+                    height: 35%;
+                    width: 100%;
+                    display: grid;
+                    place-items: center;
+
+                    button {
+                        height: 50px;
+                        width: 200px;
+                        border: 3px solid $sec4-text;
+                        background-color: $sec4-color;
+
+                        a {
+                            text-decoration: none;
+                            font-size: $btn-xs;
+                            font-display: swap;
+                            font-weight: 600;
+                            color: $sec4-text;
+                        }
+
+                        &:hover {
+                            outline: 3px solid $sec4-text;
+                            outline-offset: 5px;
+                            background-color: $sec4-text;
+
+                            a {
+                                color: $sec4-color;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // SECTION 5 //
+    .section5 {
+        width: 100%;
+        display: grid;
+        place-items: center;
+        background-color: $sec5-color;
+
+        .container {
+            height: 900px;
+            width: 100%;
+            max-width: 1600px;
+
+            .chat {
+                height: 200px;
+                width: 100%;
+                background-color: $sec5-color;
+
+                position: relative;
+
+                img {
+                    object-fit: contain;
+                    height: 100%;
+                    width: 100%;
+
+                    position: absolute;
+                    top: 90px;
+                }
+            }
+
+            .maison {
+                height: 700px;
+                width: 100%;
+                background-image: url("../../images/elements-graphiques/chafe.png");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: -240px;
+
+                position: relative;
+
+                a {
+                    height: 400px;
+                    width: 200px;
+                    margin: 0;
+                    padding: 0;
+                    color: transparent;
+                    position: absolute;
+                    top: 180px;
+                    left: 40px;
+                }
+            }
+        }
+
+        footer {
+            height: 230px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: $footer-color;
+            border-top: 2px solid black;
+
+            .container {
+                height: 100%;
+                width: 60%;
+                max-width: 1600px;
+                background-image: url("../../images/elements-graphiques/craquelure.png");
+                background-position: top left;
+                background-size: 100%;
+
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: flex-start;
+                    gap: 20px;
+                    padding: 0;
+
+                    &:first-child {
+                        margin-top: 40px;
+                    }
+
+                    &:last-child {
+                        flex-direction: row;
+                        margin-top: 40px;
+                    }
+
+                    li {
+                        display: inline-flex;
+                        justify-content: center;
+
+                        img {
+                            height: 20px;
+                            margin-right: 15px;
+                            width: auto;
+                        }
+
+                        a {
+                            text-decoration: none;
+                            font-size: $p-xs;
+                            font-display: swap;
+                            color: $footer-text;
+                        }
+
+                        address {
+                            font-size: $p-xs;
+                            font-display: swap;
+                            color: $footer-text;
+                        }
+
+                        p {
+                            font-size: 8px;
+                            font-display: swap;
+                            font-weight: 300;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // RESERVE //
+    :root {
+        --calendar-bg-color: #3B240B;
+        --calendar-font-color: #F5F5F5;
+        --weekdays-border-bottom-color: #F5DEB3;
+        --calendar-date-hover-color: #F5DEB3;
+        --calendar-current-date-color: #F5DEB3;
+        --calendar-today-color: linear-gradient(to bottom, #F5DEB3, #F5DEB3);
+        --calendar-today-innerborder-color: transparent;
+        --calendar-nextprev-bg-color: transparent;
+        --next-prev-arrow-color: #F5DEB3;
+        --calendar-border-radius: 16px;
+        --calendar-prevnext-date-color: #f5deb348;
+    }
+
+    .reserve {
+        width: 100%;
+        height: 100vh;
+        min-height: 1000px;
+        display: grid;
+        place-items: center;
+        background-color: $sec1-color;
+
+        .container {
+            height: 100%;
+            width: 95.5%;
+            max-width: 1600px;
+            display: grid;
+            place-items: center;
+
+            border: 3px solid $sec1-text;
+
+            .content {
+                height: 96%;
+                width: 96%;
+
+                position: relative;
+                border: 3px solid $sec1-text;
+
+                nav {
+                    // height: calc(115px / 2);
+                    width: 100%;
+
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+
+                    a:not(:first-child),
+                    a:not(:last-child) {
+                        font-size: $a-xs;
+                        font-display: swap;
+                        font-weight: 600;
+                    }
+
+                    a:nth-child(2),
+                    a:nth-child(3),
+                    a:nth-child(4) {
+                        margin-bottom: 15px;
+                        margin-left: 15px;
+
+                        &:hover {
+                            border-bottom: 3px solid $sec1-text;
+                        }
+                    }
+
+                    a:nth-child(5) {
+                        width: 150px;
+                        text-align: center;
+                        font-weight: 800;
+                        margin-bottom: 30px;
+                        margin-left: 15px;
+                        color: $sec1-color;
+                        background-color: $sec1-text;
+
+                        &:hover {
+                            outline: 3px solid $sec1-text;
+                            outline-offset: 5px;
+                            color: $sec1-color;
+                            background-color: $sec1-text;
+                        }
+                    }
+
+                    #home {
+
+                        img {
+                            height: 25px;
+                            width: 25px;
+                        }
+                    }
+
+                    .icon {
+
+                        i {
+                            font-style: normal;
+                            color: $sec1-text;
+                        }
+                    }
+                }
+
+                .titre {
+                    height: 30%;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+
+                    h2 {
+                        width: 80%;
+                        text-align: center;
+                        font-family: "santelia-script", sans-serif;
+                        font-weight: 900;
+                        font-size: $h2-xs;
+                        font-display: swap;
+                        color: $sec1-text;
+                    }
+
+                    a {
+                        text-align: center;
+                        text-decoration: none;
+                        font-size: 12px;
+                        font-display: swap;
+                        line-height: 25px;
+                        color: $sec1-text;
+                    }
+                }
+
+                .formulaire {
+                    height: 70%;
+                    width: 100%;
+
+                    form {
+                        height: 100%;
+                        width: 100%;
+
+                        div {
+                            display: flex;
+                            flex-direction: column;
+
+                            label {
+                                height: 40px;
+                                font-size: $p-xs;
+                                font-display: swap;
+                                font-weight: 600;
+                                color: $sec1-text;
+                            }
+
+                            input {
+                                height: 35px;
+                                padding-left: 20px;
+                                background: transparent;
+                                border: none;
+                                border-bottom: 3px solid $sec1-text;
+                                color: $sec1-text;
+
+                                &::placeholder {
+                                    color: $sec1-text;
+                                }
+                            }
+                        }
+
+                        .name {
+                            height: 12%;
+                            width: 100%;
+                        }
+
+                        .email {
+                            height: 12%;
+                            width: 100%;
+                        }
+
+                        .date {
+                            height: 58%;
+                            width: 100%;
+
+                            .calendar {
+                                font-family: 'IBM Plex Sans', sans-serif;
+                                position: relative;
+                                max-width: 400px;
+                                /*change as per your design need */
+                                min-width: 320px;
+                                background: var(--calendar-bg-color);
+                                color: var(--calendar-font-color);
+                                margin: 20px auto;
+                                box-sizing: border-box;
+                                overflow: hidden;
+                                font-weight: normal;
+                                border-radius: var(--calendar-border-radius);
+                            }
+
+                            .calendar-inner {
+                                padding: 10px;
+                            }
+
+                            .calendar .calendar-inner .calendar-body {
+                                display: grid;
+                                grid-template-columns: repeat(7, 1fr);
+                                text-align: center;
+                            }
+
+                            .calendar .calendar-inner .calendar-body div {
+                                padding: 4px;
+                                min-height: 30px;
+                                line-height: 30px;
+                                border: 1px solid transparent;
+                                margin: 10px 2px 0;
+                            }
+
+                            .calendar .calendar-inner .calendar-body div:nth-child(-n+7) {
+                                border: 1px solid transparent;
+                                border-bottom: 1px solid var(--weekdays-border-bottom-color);
+                            }
+
+                            .calendar .calendar-inner .calendar-body div:nth-child(-n+7):hover {
+                                border: 1px solid transparent;
+                                border-bottom: 1px solid var(--weekdays-border-bottom-color);
+                            }
+
+                            .calendar .calendar-inner .calendar-body div > a {
+                                color: var(--calendar-font-color);
+                                text-decoration: none;
+                                display: flex;
+                                justify-content: center;
+                            }
+
+                            .calendar .calendar-inner .calendar-body div:hover {
+                                border: 1px solid var(--calendar-date-hover-color);
+                                border-radius: 4px;
+                            }
+
+                            .calendar .calendar-inner .calendar-body div.empty-dates:hover {
+                                border: 1px solid transparent;
+                            }
+
+                            .calendar .calendar-inner .calendar-controls {
+                                display: grid;
+                                grid-template-columns: repeat(3, 1fr);
+                            }
+
+                            .calendar .calendar-inner .calendar-today-date {
+                                display: grid;
+                                text-align: center;
+                                cursor: pointer;
+                                margin: 3px 0;
+                                background: var(--calendar-current-date-color);
+                                padding: 8px 0;
+                                border-radius: 10px;
+                                width: 80%;
+                                margin: auto;
+                                color: $sec1-text;
+                            }
+
+                            .calendar .calendar-inner .calendar-controls .calendar-year-month {
+                                display: flex;
+                                flex-direction: row;
+                                min-width: 100px;
+                                justify-content: space-evenly;
+                                align-items: center;
+                            }
+
+                            .calendar .calendar-inner .calendar-controls .calendar-next {
+                                text-align: right;
+                            }
+
+                            .calendar .calendar-inner .calendar-controls .calendar-year-month .calendar-month-label,
+                            .calendar .calendar-inner .calendar-controls .calendar-year-month .calendar-year-label {
+                                font-weight: 500;
+                                font-size: 16px;
+                                font-display: swap;
+                            }
+
+                            .calendar .calendar-inner .calendar-body .calendar-today {
+                                background: var(--calendar-today-color);
+                                border-radius: 4px;
+                            }
+
+                            .calendar .calendar-inner .calendar-body .calendar-today:hover {
+                                border: 1px solid transparent;
+                            }
+
+                            .calendar .calendar-inner .calendar-body .calendar-today a {
+                                outline: 2px solid var(--calendar-today-innerborder-color);
+                                color: $sec1-text;
+                            }
+
+                            .calendar .calendar-inner .calendar-controls .calendar-next a,
+                            .calendar .calendar-inner .calendar-controls .calendar-prev a {
+                                color: var(--calendar-font-color);
+                                font-family: arial, consolas, sans-serif;
+                                font-size: 26px;
+                                font-display: swap;
+                                text-decoration: none;
+                                padding: 4px 12px;
+                                display: inline-block;
+                                background: var(--calendar-nextprev-bg-color);
+                                margin: 10px 0;
+                            }
+
+                            .calendar .calendar-inner .calendar-controls .calendar-next a svg,
+                            .calendar .calendar-inner .calendar-controls .calendar-prev a svg {
+                                height: 20px;
+                                width: 20px;
+                            }
+
+                            .calendar .calendar-inner .calendar-controls .calendar-next a svg path,
+                            .calendar .calendar-inner .calendar-controls .calendar-prev a svg path {
+                                fill: var(--next-prev-arrow-color);
+                            }
+
+                            .calendar .calendar-inner .calendar-body .next-dates,
+                            .calendar .calendar-inner .calendar-body .prev-dates {
+                                color: var(--calendar-prevnext-date-color);
+                            }
+
+                            .calendar .calendar-inner .calendar-body .next-dates:hover,
+                            .calendar .calendar-inner .calendar-body .prev-dates:hover {
+                                border: 1px solid transparent;
+                                pointer-events: none;
+                            }
+                        }
+
+                        .number {
+                            height: 12%;
+                            width: 100%;
+
+                            .send {
+                                height: 100%;
+                                width: 100%;
+                                display: flex;
+                                flex-direction: row;
+
+                                #number {
+                                    width: 70%;
+                                }
+
+                                button {
+                                    height: 35px;
+                                    width: 30%;
+                                    border: none;
+                                    border-left: 3px solid $sec1-text;
+                                    border-bottom: 3px solid $sec1-text;
+                                    color: $sec1-text;
+                                    font-weight: 700;
+                                    background: transparent;
+
+                                    &:hover {
+                                        background-color: $sec1-text;
+                                        color: $sec1-color;
+                                    }
+                                }
+                            }
+                        }
+
+                        .see {
+                            height: 6%;
+                            display: grid;
+                            place-items: center;
+
+                            h3 {
+                                font-weight: 900;
+                                font-size: 18px;
+                                font-display: swap;
+                                color: $sec1-text;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // KOPI //
+
+    .kopiOne {
+        height: 1450px;
+        width: 100%;
+        display: grid;
+        place-items: center;
+        background-color: $sec1-color;
+
+        .container {
+            height: 100%;
+            width: 95.5%;
+            max-width: 1600px;
+            display: grid;
+            place-items: center;
+
+            border: 3px solid $sec1-text;
+
+            .content {
+                height: 96%;
+                width: 96%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 40px;
+
+                position: relative;
+                border: 3px solid $sec1-text;
+
+                nav {
+                    // height: calc(115px / 2);
+                    width: 100%;
+
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+
+                    a:not(:first-child),
+                    a:not(:last-child) {
+                        font-size: $a-xs;
+                        font-display: swap;
+                        font-weight: 600;
+                    }
+
+                    a:nth-child(2),
+                    a:nth-child(3),
+                    a:nth-child(4) {
+                        margin-bottom: 15px;
+                        margin-left: 15px;
+
+                        &:hover {
+                            border-bottom: 3px solid $sec1-text;
+                        }
+                    }
+
+                    a:nth-child(5) {
+                        width: 150px;
+                        text-align: center;
+                        font-weight: 800;
+                        margin-bottom: 30px;
+                        margin-left: 15px;
+                        color: $sec1-color;
+                        background-color: $sec1-text;
+
+                        &:hover {
+                            outline: 3px solid $sec1-text;
+                            outline-offset: 5px;
+                            color: $sec1-color;
+                            background-color: $sec1-text;
+                        }
+                    }
+
+                    #home {
+
+                        img {
+                            height: 25px;
+                            width: 25px;
+                        }
+                    }
+
+                    .icon {
+
+                        i {
+                            font-style: normal;
+                            color: $sec1-text;
+                        }
+                    }
+                }
+
+                .titre {
+                    height: 15%;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-end;
+                    align-items: center;
+
+                    h2 {
+                        width: 80%;
+                        text-align: center;
+                        font-family: "santelia-script", sans-serif;
+                        font-weight: 900;
+                        font-size: $h2-xs;
+                        font-display: swap;
+                        color: $sec1-text;
+                    }
+                }
+
+                .texte {
+                    height: 85%;
+                    width: 90%;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+
+                    background-image: url('../../images/elements-graphiques/grand-sac.png'), url('../../images/elements-graphiques/tasse.png'), url('../../images/elements-graphiques/cafetiere.png'), url("../../images/elements-graphiques/petite-fleur.png");
+                    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+                    background-position: right 220px, left 350px, right bottom, left bottom;
+                    background-size: 150px, 100px, 150px, 120px;
+
+                    p {
+                        font-size: $p-xs;
+                        font-display: swap;
+
+                        &:first-child {
+                            padding-bottom: 200px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .kopiTwo {
+        height: 800px;
+        width: 100%;
+        display: grid;
+        place-items: center;
+
+        background-image: url('../../images/elements-graphiques/vague.svg'), url("../../images/elements-graphiques/coffee-min-inverse.png");
+        background-position: top left, center center;
+        background-repeat: no-repeat no-repeat;
+        background-size: contain, cover;
+
+        .container {
+            height: 100%;
+            width: 95.5%;
+            max-width: 1600px;
+            display: grid;
+            place-items: center;
+
+            .content {
+                height: 96%;
+                width: 96%;
+
+                position: relative;
+
+                .titre {
+                    height: 30%;
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    img {
+                        height: 50%;
+                        width: 50%;
+                        object-fit: contain;
+                    }
+                }
+
+                .video {
+                    height: 50%;
+                    width: 100%;
+                    display: grid;
+                    place-items: center;
+
+                    position: relative;
+
+                    iframe {
+                        height: 100%;
+                        width: 100%;
+                    }
+
+                    img {
+                        height: 100px;
+                        width: auto;
+                        position: absolute;
+                        top: -50px;
+                        right: 0;
+                    }
+                }
+
+                .liens {
+                    height: 20%;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    justify-content: center;
+                    gap: 15px;
+
+                    p {
+                        font-size: $p-xs;
+                        font-display: swap;
+                    }
+
+                    ul {
+                        display: flex;
+                        flex-direction: column;
+                        padding: 0;
+                        gap: 10px;
+
+                        li {
+                            display: inline-flex;
+
+                            img {
+                                height: 20px;
+                                width: auto;
+                                margin-right: 15px;
+                            }
+
+                            a {
+                                text-decoration: none;
+                                font-size: $p-xs;
+                                font-display: swap;
+                                color: $sec4-text;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    footer {
+        height: 230px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-position: top left;
+        background-size: 100%;
+        background-color: $footer-color;
+
+        .container {
+            height: 100%;
+            width: 60%;
+
+            ul {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 20px;
+                padding: 0;
+
+                &:first-child {
+                    margin-top: 40px;
+                }
+
+                &:last-child {
+                    flex-direction: row;
+                    margin-top: 40px;
+                }
+
+                li {
+                    display: inline-flex;
+                    justify-content: center;
+
+                    img {
+                        height: 20px;
+                        margin-right: 15px;
+                        width: auto;
+                    }
+
+                    a {
+                        text-decoration: none;
+                        font-size: $p-xs;
+                        font-display: swap;
+                        color: $footer-text;
+                    }
+
+                    address {
+                        font-size: $p-xs;
+                        font-display: swap;
+                        color: $footer-text;
+                    }
+
+                    p {
+                        font-size: 8px;
+                        font-display: swap;
+                        font-weight: 300;
+                    }
+                }
+            }
+        }
+    }
+
+    .three {
+        position: relative;
+        width: 100%;
+        height: 400px;
+        display: grid;
+        place-items: center;
+        background-color: transparent;
+
+        .container {
+            height: 100%;
+            width: 95.5%;
+            max-width: 1600px;
+            display: grid;
+            place-items: center;
+
+
+            .content {
+                height: 96%;
+                width: 96%;
+
+                position: relative;
+
+                nav {
+                    height: 100%;
+                    width: 100%;
+                    background-color: transparent;
+
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+
+                    a:not(:first-child),
+                    a:not(:last-child) {
+                        font-size: $a-xs;
+                        font-display: swap;
+                        font-weight: 600;
+                    }
+
+                    a:nth-child(2),
+                    a:nth-child(3),
+                    a:nth-child(4) {
+                        margin-bottom: 15px;
+                        margin-left: 15px;
+                        color: $sec3-text;
+
+                        &:hover {
+                            border-bottom: 3px solid $sec3-text;
+                        }
+                    }
+
+                    a:nth-child(5) {
+                        width: 150px;
+                        text-align: center;
+                        font-weight: 800;
+                        margin-bottom: 30px;
+                        margin-left: 15px;
+                        color: $sec1-text;
+                        background-color: $sec3-text;
+
+                        &:hover {
+                            outline: 3px solid $sec3-text;
+                            outline-offset: 5px;
+                        }
+                    }
+
+                    #home {
+
+                        img {
+                            height: 25px;
+                            width: 25px;
+                        }
+                    }
+
+                    .icon {
+
+                        i {
+                            font-style: normal;
+                            color: $sec3-text;
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+}

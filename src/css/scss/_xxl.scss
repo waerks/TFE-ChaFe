@@ -1,0 +1,274 @@
+@media (min-width: 1536px) {
+    // SECTION 1 //
+    .section1 {
+
+        .container {
+            background: url("../../images/elements-graphiques/chats/illustrations/cat1.png") 660px bottom no-repeat, url("../../images/elements-graphiques/herbe.png") left bottom no-repeat, url("../../images/elements-graphiques/plante2.png") 40px bottom no-repeat, url("../../images/elements-graphiques/plante1.png") 200px bottom no-repeat, url("../../images/elements-graphiques/plante3.png") 280px bottom no-repeat, url("../../images/elements-graphiques/plante2.png") 420px bottom no-repeat, url("../../images/elements-graphiques/plante3.png") 560px bottom no-repeat;
+            background-size: 45%, 50%, 10%, 6%, 10%, 10%, 10%;
+
+            .content {
+
+                nav {
+
+                    a:not(:first-child),
+                    a:not(:last-child) {
+                        font-size: $a-xxl;
+                    }
+                }
+
+                .titre {
+
+                    .soustitre {
+
+                        h3 {
+                            font-size: $h3-xxl;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // SECTION 2 //
+    .section2 {
+        background-image: url('../../images/elements-graphiques/vague.svg'), url("../../images/elements-graphiques/sol.svg"), url('../../images/elements-graphiques/briques.png');
+        background-position: top left, center 1000px, top left;
+        background-repeat: no-repeat, no-repeat, no-repeat;
+        background-size: 50%, 110%, 50%;
+
+        .container {
+            background: url("../../images/elements-graphiques/chats/illustrations/cat2.png") 520px 430px no-repeat, url("../../images/elements-graphiques/grande-fleur.png") right 70px no-repeat, url("../../images/elements-graphiques/fenetre.png") right 100px no-repeat;
+            background-size: 35%, 40%, 40%;
+
+            .contentOne {
+
+                .titre {
+                    height: 40%;
+
+                    h2 {
+                        font-size: $h2-xxl;
+                    }
+
+                    p {
+                        font-size: $p-xxl;
+                    }
+                }
+
+                .horaires {
+                    height: 30%;
+
+                    table {
+
+                        tr {
+
+                            td {
+                                font-size: $h3-xxl;
+                            }
+                        }
+                    }
+                }
+
+                .btnMenu {
+                    height: 10%;
+
+                    button {
+                        font-size: $btn-xxl;
+                    }
+                }
+            }
+        }
+    }
+
+    // SECTION 3 //
+    .section3 {
+
+        .container {
+
+            .titre {
+
+                h2 {
+                    font-size: $h2-xxl;
+                }
+            }
+        }
+    }
+
+    // SECTION 4 //
+    .section4 {
+
+        .container {
+            border-left: 1px solid black;
+            border-right: 1px solid black;
+
+            .mur {
+
+                .titreKopi {
+                    width: 450px;
+
+                    h2 {
+                        font-size: $h2-xxl;
+                    }
+                }
+            }
+
+            .kopi {
+
+                .description {
+
+                    p {
+                        font-size: $p-xxl;
+                    }
+                }
+
+                .btnKopi {
+
+                    button {
+                        height: 70px;
+                        width: 250px;
+
+                        a {
+                            font-size: $btn-lg;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // SECTION 5 //
+    .section5 {
+
+        .container {
+            height: 1150px;
+            border-left: 1px solid black;
+            border-right: 1px solid black;
+
+            .maison {
+                height: 950px;
+                background: url("../../images/elements-graphiques/chats/illustrations/cat4.png") no-repeat, url("../../images/elements-graphiques/chafe.png");
+                background-size: 16%, cover;
+                background-position: 750px 600px, center;
+
+                a {
+                    height: 600px;
+                }
+            }
+        }
+
+        footer {
+
+            .container {
+                border: none;
+            }
+        }
+    }
+
+    // RESERVE //
+
+    .reserve {
+
+        .container {
+
+            .content {
+
+                nav {
+
+                    a:not(:first-child),
+                    a:not(:last-child) {
+                        font-size: $a-xxl;
+                    }
+                }
+
+                .titre {
+                    background: url("../../images/elements-graphiques/herbe.png") no-repeat left bottom, url("../../images/elements-graphiques/chats/illustrations/cat5.png") no-repeat right bottom, url("../../images/elements-graphiques/plante2.png") no-repeat left bottom, url("../../images/elements-graphiques/plante1.png") no-repeat right bottom, url("../../images/elements-graphiques/plante3.png") no-repeat 140px bottom;
+                    background-size: 100%, 70%, 20%, 15%, 20%;
+
+                    h2 {
+                        font-size: $h2-xxl;
+                    }
+                }
+
+                .formulaire {
+                    display: grid;
+                    place-items: center;
+
+                    form {
+                        width: 90%;
+
+                        div {
+
+                            label {
+                                font-size: $p-xxl;
+                            }
+                        }
+
+                        .see {
+
+                            h3 {
+                                font-size: $h3-xxl;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // KOPI //
+
+    .kopiOne {
+
+        .container {
+
+            .content {
+
+                nav {
+
+                    a:not(:first-child),
+                    a:not(:last-child) {
+                        font-size: $a-xxl;
+                    }
+                }
+
+                .titre {
+
+                    h2 {
+                        font-size: $h2-xxl;
+                    }
+                }
+
+                .texte {
+                    padding: 0 50px 100px 25px;
+                    background-position: 450px bottom, 50px bottom, 1100px bottom, 750px bottom, 200px 410px;
+                    background-size: 170px, 150px, 200px, 260px, 100px;
+
+                    @media (min-width: 1586px) {
+                        padding: 0 100px 100px 100px;
+                    }
+
+                    p {
+                        font-size: $p-xxl;
+                    }
+                }
+            }
+        }
+    }
+
+    .three {
+        height: 150px;
+
+        .container {
+
+            .content {
+
+                nav {
+
+                    a:not(:first-child),
+                    a:not(:last-child) {
+                        font-size: $a-xxl;
+                    }
+                }
+            }
+        }
+    }
+}

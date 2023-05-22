@@ -1,0 +1,415 @@
+@media (min-width: 1024px) {
+    // SECTION 1 //
+    .section1 {
+        background: rgb(245,245,245);
+        background: linear-gradient(270deg, rgba(245,245,245,1) 50%, rgba(245,222,179,1) 50%);
+
+        .container {
+
+            .content {
+
+                nav {
+                    background: rgb(245,245,245);
+                    background: linear-gradient(270deg, rgba(245,245,245,1) 50%, rgba(245,222,179,1) 50%);
+
+                    a:not(:first-child),
+                    a:not(:last-child) {
+                        font-size: $a-lg;
+                    }
+
+                    a:nth-child(5) {
+                        color: $body;
+
+                        &:hover {
+                            color: $body;
+                        }
+                    }
+                }
+
+                .titre {
+
+                    .chafe {
+                        width: 50%;
+                    }
+
+                    .soustitre {
+                        width: 50%;
+
+                        h3 {
+                            font-size: $h3-lg;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // SECTION 2 //
+    .section2 {
+        background-image: url('../../images/elements-graphiques/vague.svg'), url("../../images/elements-graphiques/sol.svg"), url('../../images/elements-graphiques/briques.png');
+        background-position: top left, center 1050px, top left;
+        background-repeat: no-repeat, no-repeat, no-repeat;
+        background-size: 50%, 100%, 50%;
+
+        .container {
+            background: url("../../images/elements-graphiques/chats/illustrations/cat2.png") 340px 670px no-repeat, url("../../images/elements-graphiques/grande-fleur.png") right 200px no-repeat, url("../../images/elements-graphiques/fenetre.png") right 180px no-repeat;
+            background-size: 35%, 55%, 55%;
+
+            .contentOne {
+                width: 50%;
+
+                .titre {
+                    height: 30%;
+                    align-items: flex-start;
+                    padding-left: 7%;
+                    padding-right: 0;
+
+                    h2 {
+                        font-size: $h2-lg;
+                    }
+
+                    p {
+                        width: 80%;
+                        font-size: $p-lg;
+                    }
+                }
+
+                .horaires {
+                    height: 40%;
+                    width: 93%;
+                    justify-content: center;
+                    align-items: center;
+                    padding-left: 7%;
+
+                    table {
+
+                        tr {
+
+                            td {
+                                font-size: $h3-lg;
+                            }
+                        }
+                    }
+                }
+
+                .btnMenu {
+                    height: 30%;
+                    padding-left: 7%;
+
+                    button {
+                        height: 70px;
+                        width: 250px;
+                        font-size: $btn-lg;
+                    }
+                }
+            }
+        }
+    }
+
+    // SECTION 3 //
+    .section3 {
+
+        .container {
+
+            .titre {
+
+                h2 {
+                    font-size: $h2-lg;
+                }
+            }
+        }
+    }
+
+    // SECTION 4 //
+    .section4 {
+
+        .container {
+
+            .mur {
+
+                .logoKopi {
+                    right: 150px;
+                }
+
+                .titreKopi {
+
+                    h2 {
+                        font-size: $h2-lg;
+                    }
+                }
+            }
+
+            .elementsGraphiques {
+                height: 100px;
+
+                #cafetiere {
+                    left: 95px;
+                }
+
+                #grandSac {
+                    top: -90px;
+                    right: 160px;
+                }
+
+                #petitSac {
+                    top: 10px;
+                    right: 120px;
+                }
+            }
+
+            .kopi {
+
+                .description {
+
+                    p {
+                        font-size: $p-lg;
+                    }
+                }
+
+                .btnKopi {
+
+                    button {
+                        height: 70px;
+                        width: 250px;
+
+                        a {
+                            font-size: $btn-lg;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // SECTION 5 //
+    .section5 {
+
+        .container {
+
+            .maison {
+                background: url("../../images/elements-graphiques/chats/illustrations/cat4.png") no-repeat, url("../../images/elements-graphiques/chafe.png");
+                background-size: 18%, cover;
+                background-position: 500px 420px, center;
+
+                a {
+                    left: 170px;
+                }
+            }
+        }
+    }
+
+    // RESERVE //
+
+    .reserve {
+        background: rgb(245,245,245);
+        background: linear-gradient(270deg, rgba(245,245,245,1) 50%, rgba(245,222,179,1) 50%);
+
+        .container {
+
+            .content {
+                display: flex;
+                padding-top: 150px;
+
+                nav {
+                    background: rgb(245,245,245);
+                    background: linear-gradient(270deg, rgba(245,245,245,1) 50%, rgba(245,222,179,1) 50%);
+
+                    a:not(:first-child),
+                    a:not(:last-child) {
+                        font-size: $a-lg;
+                    }
+
+                    a:nth-child(5) {
+                        color: $body;
+
+                        &:hover {
+                            color: $body;
+                        }
+                    }
+                }
+
+                .titre {
+                    height: 100%;
+                    width: 50%;
+                    justify-content: flex-start;
+                    padding-top: 130px;
+
+                    background: url("../../images/elements-graphiques/herbe.png") no-repeat left bottom, url("../../images/elements-graphiques/chats/illustrations/cat5.png") no-repeat right bottom, url("../../images/elements-graphiques/plante2.png") no-repeat left bottom;
+                    background-size: 100%, 90%, 50%;
+
+                    h2 {
+                        font-size: $h2-lg;
+                    }
+                }
+
+                .formulaire {
+                    height: 100%;
+                    width: 50%;
+
+                    form {
+                        width: 80%;
+
+                        div {
+
+                            label {
+                                font-size: $p-lg;
+                            }
+
+                            input {
+                                height: 50px;
+                            }
+                        }
+
+                        .number {
+
+                            .send {
+
+                                button {
+                                    height: 50px;
+
+                                    &:hover {
+                                        color: $body;
+                                    }
+                                }
+                            }
+                        }
+
+                        .see {
+
+                            h3 {
+                                font-size: $h3-lg;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // KOPI //
+
+    .kopiOne {
+        height: 930px;
+        background: rgb(245,245,245);
+        background: linear-gradient(270deg, rgba(245,245,245,1) 50%, rgba(245,222,179,1) 50%);
+
+        .container {
+
+            .content {
+                align-items: flex-start;
+
+                nav {
+                    background: rgb(245,245,245);
+                    background: linear-gradient(270deg, rgba(245,245,245,1) 50%, rgba(245,222,179,1) 50%);
+
+                    a:not(:first-child),
+                    a:not(:last-child) {
+                        font-size: $a-lg;
+                    }
+
+                    a:nth-child(5) {
+                        color: $body;
+
+                        &:hover {
+                            color: $body;
+                        }
+                    }
+                }
+
+                .titre {
+                    height: 45%;
+                    width: 50%;
+
+                    h2 {
+                        font-size: $h2-lg;
+                    }
+                }
+
+                .texte {
+                    height: 55%;
+                    width: 100%;
+                    flex-wrap: wrap;
+                    padding: 0 30px 100px 15px;
+
+                    background-position: 300px bottom, 50px bottom, right bottom, 500px bottom, 150px 410px;
+                    background-size: 120px, 100px, 170px, 220px, 70px;
+
+                    p {
+                        width: 50%;
+                        font-size: $p-lg;
+
+                        &:first-child {
+                            padding-bottom: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .kopiTwo {
+        background-size: 50%, cover;
+
+        .container {
+
+            .content {
+
+                .titre {
+                    height: 25%;
+                    align-items: center;
+                    padding: 0;
+                }
+
+                .video {
+                    height: 55%;
+                }
+
+                .liens {
+
+                    p {
+                        font-size: $p-lg;
+                    }
+
+                    ul {
+
+                        li {
+
+                            a {
+                                font-size: $p-lg;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    footer {
+
+        .container {
+
+            ul {
+                width: 100%;
+            }
+        }
+    }
+
+    .three {
+        height: 150px;
+
+        .container {
+
+            .content {
+
+                nav {
+                    background: transparent;
+
+                    a:not(:first-child),
+                    a:not(:last-child) {
+                        font-size: $a-lg;
+                    }
+                }
+            }
+        }
+    }
+}

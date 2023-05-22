@@ -1,0 +1,371 @@
+@media (min-width: 768px) {
+    // SECTION 1 //
+    .section1 {
+
+        .container {
+            background: url("../../images/elements-graphiques/chats/illustrations/cat1.png") right bottom no-repeat, url("../../images/elements-graphiques/herbe.png") left bottom no-repeat, url("../../images/elements-graphiques/plante2.png") left bottom no-repeat, url("../../images/elements-graphiques/plante2.png") 150px bottom no-repeat, url("../../images/elements-graphiques/plante3.png") 250px bottom no-repeat;
+            background-size: 55%, 50%, 20%, 10%, 20%;
+
+            .content {
+
+                nav {
+                    height: 100px;
+                    padding-top: 15px;
+
+                    a:not(:first-child),
+                    a:not(:last-child) {
+                        font-size: $a-md;
+                    }
+
+                    a:nth-child(5) {
+                        margin-bottom: 0;
+                        position: absolute;
+                        top: 15px;
+                        right: 15px;
+                    }
+                }
+
+                .titre {
+
+                    .soustitre {
+
+                        h3 {
+                            font-size: $h3-md;
+                        }
+
+                        span {
+                            height: 9px;
+                            width: 9px;
+                            border-radius: 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // SECTION 2 //
+    .section2 {
+
+        .container {
+            height: 1150px;
+            margin-top: 30px;
+            background: url("../../images/elements-graphiques/grande-fleur.png") right 380px no-repeat, url("../../images/elements-graphiques/fenetre.png") 320px 440px no-repeat;
+            background-size: 60%, 55%;
+
+            .contentOne {
+
+                .titre {
+                    padding-left: 15%;
+                    padding-right: 15%;
+
+                    h2 {
+                        font-size: $h2-md;
+                    }
+
+                    p {
+                        font-size: $p-md;
+                    }
+                }
+
+                .horaires {
+                    padding-left: 5%;
+
+                    table {
+
+                        tr {
+
+                            td {
+                                font-size: $h3-md;
+                            }
+                        }
+                    }
+                }
+
+                .btnMenu {
+                    padding-left: 5%;
+
+                    button {
+                        font-size: $btn-md;
+                    }
+                }
+            }
+        }
+    }
+
+    // SECTION 3 //
+    .section3 {
+
+        .container {
+
+            .titre {
+
+                h2 {
+                    font-size: $h2-md;
+                }
+            }
+        }
+    }
+
+    // SECTION 4 //
+    .section4 {
+
+        .container {
+
+            .mur {
+
+                .titreKopi {
+                    width: 350px;
+
+                    h2 {
+                        font-size: $h2-md;
+                    }
+                }
+            }
+
+            .kopi {
+
+                .description {
+
+                    p {
+                        font-size: $p-md;
+                    }
+                }
+
+                .btnKopi {
+
+                    button {
+
+                        a {
+                            font-size: $btn-md;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // SECTION 5 //
+    .section5 {
+
+        .container {
+
+            .clickToEnter {
+
+                h2 {
+                    font-size: $h2-md;
+                }
+            }
+
+            .maison {
+                background: url("../../images/elements-graphiques/chats/illustrations/cat4.png") no-repeat, url("../../images/elements-graphiques/chafe.png");
+                background-size: 25%, cover;
+                background-position: 350px 400px, center;
+
+                a {
+                    width: 300px;
+                }
+            }
+        }
+
+        footer {
+            height: 170px;
+
+            .container {
+                width: 100%;
+                background-size: calc(100% / 2);
+
+                ul {
+                    flex-direction: row;
+                    justify-content: space-between;
+                }
+            }
+        }
+    }
+
+    // RESERVE //
+
+    .reserve {
+
+        .container {
+
+            .content {
+
+                nav {
+                    height: 100px;
+                    padding-top: 15px;
+
+                    a:not(:first-child),
+                    a:not(:last-child) {
+                        font-size: $a-md;
+                    }
+
+                    a:nth-child(5) {
+                        margin-bottom: 0;
+                        position: absolute;
+                        top: 15px;
+                        right: 15px;
+                    }
+                }
+
+                .titre {
+
+                    h2 {
+                        font-size: $h2-md;
+                    }
+                }
+
+                .formulaire {
+
+                    form {
+                        width: 80%;
+
+                        div {
+
+                            label {
+                                font-size: $p-md;
+                            }
+                        }
+
+                        .see {
+
+                            h3 {
+                                font-size: $h3-md;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // KOPI //
+
+    .kopiOne {
+
+        .container {
+
+            .content {
+
+                nav {
+                    height: 100px;
+                    padding-top: 15px;
+
+                    a:not(:first-child),
+                    a:not(:last-child) {
+                        font-size: $a-md;
+                    }
+
+                    a:nth-child(5) {
+                        margin-bottom: 0;
+                        position: absolute;
+                        top: 15px;
+                        right: 15px;
+                    }
+                }
+
+                .titre {
+                    height: 25%;
+
+                    h2 {
+                        font-size: $h2-md;
+                    }
+                }
+
+                .texte {
+                    height: 75%;
+                    background-position: 380px 100px, 50px 200px, 380px bottom, 30px bottom, 160px 170px;
+                    background-size: 130px, 100px, 170px, 200px, 70px;
+
+                    p {
+                        font-size: $p-sm;
+
+                        &:first-child {
+                            padding-bottom: 150px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .kopiTwo {
+
+        .container {
+
+            .content {
+
+                .titre {
+                    align-items: flex-end;
+                    padding-bottom: 100px;
+                }
+
+                .video {
+
+                    img {
+                        height: 150px;
+                        top: -80px;
+                    }
+                }
+
+                .liens {
+
+                    p {
+                        font-size: $p-md;
+                    }
+
+                    ul {
+
+                        li {
+
+                            a {
+                                font-size: $p-md;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    footer {
+        height: 170px;
+        background-size: calc(100% / 2);
+
+        .container {
+            width: 90%;
+
+            ul {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+        }
+    }
+
+    .three {
+        height: 150px;
+
+        .container {
+
+            .content {
+
+                nav {
+                    height: 100px;
+                    padding-top: 15px;
+
+                    a:not(:first-child),
+                    a:not(:last-child) {
+                        font-size: $a-md;
+                    }
+
+                    a:nth-child(5) {
+                        margin-bottom: 0;
+                        position: absolute;
+                        top: 15px;
+                        right: 15px;
+                    }
+                }
+            }
+        }
+    }
+}

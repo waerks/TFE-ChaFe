@@ -1,0 +1,315 @@
+@media (min-width: 1280px) {
+    // SECTION 1 //
+    .section1 {
+
+        .container {
+            background: url("../../images/elements-graphiques/chats/illustrations/cat1.png") 580px bottom no-repeat, url("../../images/elements-graphiques/herbe.png") left bottom no-repeat, url("../../images/elements-graphiques/plante2.png") 40px bottom no-repeat, url("../../images/elements-graphiques/plante1.png") 170px bottom no-repeat, url("../../images/elements-graphiques/plante3.png") 250px bottom no-repeat, url("../../images/elements-graphiques/plante2.png") 350px bottom no-repeat, url("../../images/elements-graphiques/plante3.png") 450px bottom no-repeat;
+            background-size: 50%, 50%, 10%, 6%, 10%, 10%, 10%;
+
+            .content {
+
+                nav {
+
+                    a:not(:first-child),
+                    a:not(:last-child) {
+                        font-size: $a-xl;
+                    }
+                }
+
+                .titre {
+
+                    .soustitre {
+
+                        h3 {
+                            font-size: $h3-xl;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // SECTION 2 //
+    .section2 {
+
+        .container {
+            background: url("../../images/elements-graphiques/chats/illustrations/cat2.png") 400px 600px no-repeat, url("../../images/elements-graphiques/grande-fleur.png") right 200px no-repeat, url("../../images/elements-graphiques/fenetre.png") right 180px no-repeat;
+            background-size: 35%, 45%, 45%;
+
+            .contentOne {
+
+                .titre {
+
+                    h2 {
+                        font-size: $h2-xl;
+                    }
+
+                    p {
+                        font-size: $p-xl;
+                    }
+                }
+
+                .horaires {
+
+                    table {
+
+                        tr {
+
+                            td {
+                                font-size: $h3-xl;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // SECTION 3 //
+    .section3 {
+
+        .container {
+            min-height: 650px;
+
+            .titre {
+                padding-bottom: 50px;
+
+                h2 {
+                    font-size: $h2-xl;
+                }
+            }
+        }
+    }
+
+    // SECTION 4 //
+    .section4 {
+
+        .container {
+
+            .mur {
+
+                .logoKopi {
+                    height: 150px;
+                    width: 150px;
+                    right: 250px;
+
+                    .contentLogo {
+                        height: 150px;
+                        width: 150px;
+                    }
+                }
+
+                .titreKopi {
+
+                    h2 {
+                        font-size: $h2-lg;
+                    }
+                }
+            }
+
+            .elementsGraphiques {
+                height: 100px;
+
+                #cafetiere {
+                    left: 150px;
+                }
+
+                #grandSac {
+                    top: -90px;
+                    right: 160px;
+                }
+
+                #petitSac {
+                    top: 10px;
+                    right: 120px;
+                }
+            }
+
+            .kopi {
+
+                .description {
+                    width: 60%;
+
+                    p {
+                        font-size: $p-xl;
+                    }
+                }
+
+                .btnKopi {
+
+                    button {
+
+                        a {
+                            font-size: $btn-xl;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // SECTION 5 //
+    .section5 {
+
+        .container {
+
+            .maison {
+                background: url("../../images/elements-graphiques/chats/illustrations/cat3.png") no-repeat, url("../../images/elements-graphiques/chafe.png;");
+                background-size: 15%, cover;
+                background-position: 600px 420px, center;
+
+                a {
+                    left: 290px;
+                }
+            }
+        }
+    }
+
+    // RESERVE //
+
+    .reserve {
+
+        .container {
+
+            .content {
+
+                nav {
+
+                    a:not(:first-child),
+                    a:not(:last-child) {
+                        font-size: $a-xl;
+                    }
+                }
+
+                .titre {
+                    background: url("../../images/elements-graphiques/herbe.png") no-repeat left bottom, url("../../images/elements-graphiques/chats/illustrations/cat5.png") no-repeat right bottom, url("../../images/elements-graphiques/plante2.png") no-repeat left bottom, url("../../images/elements-graphiques/plante1.png") no-repeat right bottom;
+                    background-size: 100%, 80%, 30%, 20%;
+
+                    h2 {
+                        font-size: $h2-xl;
+                    }
+                }
+
+                .formulaire {
+                    display: grid;
+                    place-items: center;
+
+                    form {
+                        width: 90%;
+
+                        div {
+
+                            label {
+                                font-size: $p-xl;
+                            }
+                        }
+
+                        .see {
+
+                            h3 {
+                                font-size: $h3-xl;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // KOPI //
+
+    .kopiOne {
+        height: 1000px;
+
+        .container {
+
+            .content {
+
+                nav {
+
+                    a:not(:first-child),
+                    a:not(:last-child) {
+                        font-size: $a-xl;
+                    }
+                }
+
+                .titre {
+
+                    h2 {
+                        font-size: $h2-xl;
+                    }
+                }
+
+                .texte {
+                    background-position: 350px bottom, 50px bottom, 950px bottom, 650px bottom, 150px 430px;
+                    background-size: 120px, 100px, 170px, 220px, 70px;
+
+                    p {
+                        font-size: $p-xl;
+                    }
+                }
+            }
+        }
+    }
+
+    .kopiTwo {
+        height: 1000px;
+
+        .container {
+
+            .content {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                .video {
+
+                    iframe {
+                        width: 80%;
+                    }
+
+                    img {
+                        right: 10%;
+                    }
+                }
+
+                .liens {
+                    width: 80%;
+
+                    p {
+                        font-size: $p-xl;
+                    }
+
+                    ul {
+
+                        li {
+
+                            a {
+                                font-size: $p-xl;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .three {
+        height: 150px;
+
+        .container {
+
+            .content {
+
+                nav {
+
+                    a:not(:first-child),
+                    a:not(:last-child) {
+                        font-size: $a-xl;
+                    }
+                }
+            }
+        }
+    }
+}
