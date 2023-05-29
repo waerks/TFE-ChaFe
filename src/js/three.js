@@ -1,20 +1,14 @@
 import * as THREE from 'three'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
-import * as dat from 'lil-gui'
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js'
-
-/**
- * Loaders
- */
-const gltfLoader = new GLTFLoader()
-const cubeTextureLoader = new THREE.CubeTextureLoader()
+import { DRACOLoader } from 'three/examples/jsm/loaders/DRACOLoader.js'
+import * as dat from 'lil-gui'
 
 /**
  * Base
  */
 // Debug
-const gui = new dat.GUI()
-const debugObject = {}
+// const gui = new dat.GUI()
 
 // Canvas
 const canvas = document.querySelector('canvas.webgl')
@@ -22,80 +16,86 @@ const canvas = document.querySelector('canvas.webgl')
 // Scene
 const scene = new THREE.Scene()
 
-/**
- * Update all materials
- */
-const updateAllMaterials = () => {
-    scene.traverse(
-        (child) => {
-            if(child instanceof THREE.Mesh && child.material instanceof THREE.MeshStandardMaterial) {
-                // child.material.envMap = environmentMap
-                child.material.envMapIntensity = debugObject.envMapIntensity
-                child.material.needsUpdate = true
-                child.castShadow = true
-                child.receiveShadow = true
-            }
-        }
-    )
-}
+// const axesHelper = new THREE.AxesHelper( 5 );
+// scene.add( axesHelper );
 
 /**
- * Environment map
+ * Loaders
  */
-const environmentMap = cubeTextureLoader.load([
-    '/textures/environmentMaps/0/px.jpg',
-    '/textures/environmentMaps/0/nx.jpg',
-    '/textures/environmentMaps/0/py.jpg',
-    '/textures/environmentMaps/0/ny.jpg',
-    '/textures/environmentMaps/0/pz.jpg',
-    '/textures/environmentMaps/0/nz.jpg'
-])
-environmentMap.encoding = THREE.sRGBEncoding
-scene.background = environmentMap
-scene.environment = environmentMap
+const dracoLoader = new DRACOLoader()
+dracoLoader.setDecoderPath('/draco/')
 
-debugObject.envMapIntensity = 5 / 2
-gui.add(debugObject, 'envMapIntensity').min(0).max(10).step(0.001).onChange(updateAllMaterials)
+const gltfLoader = new GLTFLoader()
+gltfLoader.setDRACOLoader(dracoLoader)
+
+/**
+ * Envrinonment map
+ */
+scene.background = new THREE.Color('#ffe4c4')
 
 /**
  * Models
  */
+let mixer = null
+
 gltfLoader.load(
-    '/models/hamburger.glb',
+    '/models/chafe-scene.glb',
     (gltf) =>
     {
-        gltf.scene.scale.set(0.3, 0.3, 0.3)
-        gltf.scene.position.set(0, - 1, 0)
+        gltf.scene.rotation.y = Math.PI * - 0.5
         scene.add(gltf.scene)
-
-        updateAllMaterials()
-
-        // Gui
-        gui.add(gltf.scene.rotation, 'y').min(- Math.PI).max(Math.PI).step(0.001).name('rotation')
+        console.log(gltf.scene);
     }
 )
 
 /**
  * Lights
  */
-const directionalLight = new THREE.DirectionalLight('#ffffff', 3)
-directionalLight.castShadow = true
-directionalLight.shadow.camera.far = 15
-directionalLight.shadow.mapSize.set(1024, 1024)
-directionalLight.shadow.normalBias = 0.05
-directionalLight.position.set(0.25, 3, - 2.25)
+const ambientLight = new THREE.AmbientLight(0xffffff, 1)
+scene.add(ambientLight)
 
-const directionalLightHelper = new THREE.DirectionalLightHelper(directionalLight)
-const directionalLightCameraHelper = new THREE.CameraHelper(directionalLight.shadow.camera)
+const pointLightOne = new THREE.PointLight('#FFB272', 400)
+scene.add(pointLightOne)
+// const pointLightOneHelper = new THREE.PointLightHelper(pointLightOne, 1)
+// scene.add(pointLightOneHelper)
 
+const pointLightTwo = new THREE.PointLight('#FFB272', 400)
+scene.add(pointLightTwo)
+// const pointLightTwoHelper = new THREE.PointLightHelper(pointLightTwo, 1)
+// scene.add(pointLightTwoHelper)
 
-scene.add(directionalLight)
+const pointLightThree = new THREE.PointLight('#FFB272', 400)
+scene.add(pointLightThree)
+// const pointLightThreeHelper = new THREE.PointLightHelper(pointLightThree, 1)
+// scene.add(pointLightThreeHelper)
 
-// Gui
-gui.add(directionalLight, 'intensity').min(0).max(10).step(0.001).name('lightIntensity')
-gui.add(directionalLight.position, 'x').min(- 5).max(5).step(0.001).name('lightX')
-gui.add(directionalLight.position, 'y').min(- 5).max(5).step(0.001).name('lightY')
-gui.add(directionalLight.position, 'z').min(- 5).max(5).step(0.001).name('lightZ')
+const pointLightFour = new THREE.PointLight('#FFB272', 700)
+scene.add(pointLightFour)
+// const pointLightFourHelper = new THREE.PointLightHelper(pointLightFour, 1)
+// scene.add(pointLightFourHelper)
+
+const sphereGeometry = new THREE.SphereGeometry(1, 16, 16)
+const sphereMaterial = new THREE.MeshStandardMaterial({
+    color: '#FFB272',
+    transparent: true,
+    opacity: 0
+})
+
+const light1 = new THREE.Mesh(sphereGeometry, sphereMaterial)
+light1.position.set(5, 12, -10)
+scene.add(light1)
+
+const light2 = new THREE.Mesh(sphereGeometry, sphereMaterial)
+light2.position.set(-8, 12, -10)
+scene.add(light2)
+
+const light3 = new THREE.Mesh(sphereGeometry, sphereMaterial)
+light3.position.set(-8, 12, 0)
+scene.add(light3)
+
+const light4 = new THREE.Mesh(sphereGeometry, sphereMaterial)
+light4.position.set(-8, 12, 12)
+scene.add(light4)
 
 /**
  * Sizes
@@ -125,44 +125,60 @@ window.addEventListener('resize', () =>
  */
 // Base camera
 const camera = new THREE.PerspectiveCamera(75, sizes.width / sizes.height, 0.1, 100)
-camera.position.set(4, 1, - 4)
+camera.position.set(- 30, 20, 20)
 scene.add(camera)
 
 // Controls
 const controls = new OrbitControls(camera, canvas)
+controls.target.set(0, 1, 0)
 controls.enableDamping = true
 
 /**
  * Renderer
  */
 const renderer = new THREE.WebGLRenderer({
-    canvas: canvas,
-    antialias: true
+    canvas: canvas
 })
+renderer.shadowMap.enabled = true
+renderer.shadowMap.type = THREE.PCFSoftShadowMap
 renderer.setSize(sizes.width, sizes.height)
 renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
 renderer.physicallyCorrectLights = true
-renderer.outputEncoding = THREE.sRGBEncoding
-renderer.toneMapping = THREE.ACESFilmicToneMapping
-renderer.toneMappingExposure = 3
-renderer.shadowMap.enabled = true
-renderer.shadowMap.type = THREE.PCFShadowMap
-
-gui.add(renderer, 'toneMapping', {
-    No: THREE.NoToneMapping,
-    Linear: THREE.LinearToneMapping,
-    Reinhard: THREE.ReinhardToneMapping,
-    Cineon: THREE.CineonToneMapping,
-    ACESFilmic: THREE.ACESFilmicToneMapping
-})
-
-gui.add(renderer, 'toneMappingExposure').min(0).max(10).step(0.001)
 
 /**
  * Animate
  */
+const clock = new THREE.Clock()
+let previousTime = 0
+
 const tick = () =>
 {
+    const elapsedTime = clock.getElapsedTime()
+    const deltaTime = elapsedTime - previousTime
+    previousTime = elapsedTime
+
+    if(mixer)
+    {
+        mixer.update(deltaTime)
+    }
+
+    // Update lights
+    pointLightOne.position.x = light1.position.x
+    pointLightOne.position.y = light1.position.y
+    pointLightOne.position.z = light1.position.z
+
+    pointLightTwo.position.x = light2.position.x
+    pointLightTwo.position.y = light2.position.y
+    pointLightTwo.position.z = light2.position.z
+
+    pointLightThree.position.x = light3.position.x
+    pointLightThree.position.y = light3.position.y
+    pointLightThree.position.z = light3.position.z
+
+    pointLightFour.position.x = light4.position.x
+    pointLightFour.position.y = light4.position.y
+    pointLightFour.position.z = light4.position.z
+
     // Update controls
     controls.update()
 
