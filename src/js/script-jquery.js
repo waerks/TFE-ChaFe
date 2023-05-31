@@ -3,7 +3,7 @@ $(document).ready(function () {
     /**
      * FORMULAIRE VALIDETTA
      */
-    $("#formulaire").validetta();
+    // $("#formulaire").validetta();
 
     /**
      * BOUTON SUBMIT
@@ -45,7 +45,7 @@ $(document).ready(function () {
         // CARD CAT
         htmlIn += '<div class="cardOne card">'
         htmlIn += '<div class="item1">'
-        htmlIn += '<img src="images/chats/Lilie.jpg" alt="Lilie">'
+        htmlIn += '<img src="images/elements-graphiques/chats/images/Lilie.jpg" alt="Lilie">'
         htmlIn += '</div>'
         htmlIn += '<div class="item2">'
         htmlIn += '<div class="nom">'
@@ -63,7 +63,7 @@ $(document).ready(function () {
         htmlIn += '</div>'
         htmlIn += '<div class="gender">'
         htmlIn += '<h4>GENDER</h4>'
-        htmlIn += '<div id="test"></div>'
+        htmlIn += '<div id="test"><img src="images/elements-graphiques/female.png" alt="Female"></div>'
         htmlIn += '</div>'
         htmlIn += '</div>'
         htmlIn += '</div>'
@@ -110,7 +110,7 @@ $(document).ready(function () {
         // CARD CAT
         htmlIn += '<div class="cardTwo card">'
         htmlIn += '<div class="item1">'
-        htmlIn += '<img src="images/chats/Calypso.jpg" alt="Calypso">'
+        htmlIn += '<img src="images/elements-graphiques/chats/images/Calypso.jpg" alt="Calypso">'
         htmlIn += '</div>'
         htmlIn += '<div class="item2">'
         htmlIn += '<div class="nom">'
@@ -128,7 +128,7 @@ $(document).ready(function () {
         htmlIn += '</div>'
         htmlIn += '<div class="gender">'
         htmlIn += '<h4>GENDER</h4>'
-        htmlIn += '<div id="test"></div>'
+        htmlIn += '<div id="test"><img src="images/elements-graphiques/male.png" alt="Male"></div>'
         htmlIn += '</div>'
         htmlIn += '</div>'
         htmlIn += '</div>'
@@ -172,7 +172,7 @@ $(document).ready(function () {
         // CARD CAT
         htmlIn += '<div class="cardThree card">'
         htmlIn += '<div class="item1">'
-        htmlIn += '<img src="images/chats/Moka.jpg" alt="Moka">'
+        htmlIn += '<img src="images/elements-graphiques/chats/images/Moka.jpg" alt="Moka">'
         htmlIn += '</div>'
         htmlIn += '<div class="item2">'
         htmlIn += '<div class="nom">'
@@ -190,7 +190,7 @@ $(document).ready(function () {
         htmlIn += '</div>'
         htmlIn += '<div class="gender">'
         htmlIn += '<h4>GENDER</h4>'
-        htmlIn += '<div id="test"></div>'
+        htmlIn += '<div id="test"><img src="images/elements-graphiques/female.png" alt="Female"></div>'
         htmlIn += '</div>'
         htmlIn += '</div>'
         htmlIn += '</div>'
@@ -234,7 +234,7 @@ $(document).ready(function () {
         // CARD CAT
         htmlIn += '<div class="cardFour card">'
         htmlIn += '<div class="item1">'
-        htmlIn += '<img src="images/chats/Nala.jpg" alt="Nala">'
+        htmlIn += '<img src="images/elements-graphiques/chats/images/Nala.jpg" alt="Nala">'
         htmlIn += '</div>'
         htmlIn += '<div class="item2">'
         htmlIn += '<div class="nom">'
@@ -252,7 +252,7 @@ $(document).ready(function () {
         htmlIn += '</div>'
         htmlIn += '<div class="gender">'
         htmlIn += '<h4>GENDER</h4>'
-        htmlIn += '<div id="test"></div>'
+        htmlIn += '<div id="test"><img src="images/elements-graphiques/female.png" alt="Female"></div>'
         htmlIn += '</div>'
         htmlIn += '</div>'
         htmlIn += '</div>'
@@ -296,7 +296,7 @@ $(document).ready(function () {
         // CARD CAT
         htmlIn += '<div class="cardFive card">'
         htmlIn += '<div class="item1">'
-        htmlIn += '<img src="images/chats/Pixel.jpg" alt="Pixel">'
+        htmlIn += '<img src="images/elements-graphiques/chats/images/Pixel.jpg" alt="Pixel">'
         htmlIn += '</div>'
         htmlIn += '<div class="item2">'
         htmlIn += '<div class="nom">'
@@ -314,7 +314,7 @@ $(document).ready(function () {
         htmlIn += '</div>'
         htmlIn += '<div class="gender">'
         htmlIn += '<h4>GENDER</h4>'
-        htmlIn += '<div id="test"></div>'
+        htmlIn += '<div id="test"><img src="images/elements-graphiques/male.png" alt="Male"></div>'
         htmlIn += '</div>'
         htmlIn += '</div>'
         htmlIn += '</div>'
@@ -358,7 +358,7 @@ $(document).ready(function () {
         // CARD CAT
         htmlIn += '<div class="cardSix card">'
         htmlIn += '<div class="item1">'
-        htmlIn += '<img src="images/chats/Simbaï.jpg" alt="Simbaï">'
+        htmlIn += '<img src="images/elements-graphiques/chats/images/Simbaï.jpg" alt="Simbaï">'
         htmlIn += '</div>'
         htmlIn += '<div class="item2">'
         htmlIn += '<div class="nom">'
@@ -376,7 +376,7 @@ $(document).ready(function () {
         htmlIn += '</div>'
         htmlIn += '<div class="gender">'
         htmlIn += '<h4>GENDER</h4>'
-        htmlIn += '<div id="test"></div>'
+        htmlIn += '<div id="test"><img src="images/elements-graphiques/male.png" alt="Male"></div>'
         htmlIn += '</div>'
         htmlIn += '</div>'
         htmlIn += '</div>'
