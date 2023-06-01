@@ -1,8 +1,8 @@
-// import * as THREE from 'three'
-// import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
-// import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js'
-// import { DRACOLoader } from 'three/examples/jsm/loaders/DRACOLoader.js'
-// import * as dat from 'lil-gui'
+import * as THREE from 'three'
+import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
+import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js'
+import { DRACOLoader } from 'three/examples/jsm/loaders/DRACOLoader.js'
+import * as dat from 'lil-gui'
 
 /**
  * Base
@@ -23,7 +23,7 @@ const scene = new THREE.Scene()
  * Loaders
  */
 const dracoLoader = new DRACOLoader()
-dracoLoader.setDecoderPath('static/draco/')
+dracoLoader.setDecoderPath('/draco/')
 
 const gltfLoader = new GLTFLoader()
 gltfLoader.setDRACOLoader(dracoLoader)
