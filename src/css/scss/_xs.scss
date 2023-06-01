@@ -37,7 +37,7 @@
 
             border: 3px solid $sec1-text;
 
-            background: url("../../images/elements-graphiques/chats/illustrations/animations/Cat1.gif") right bottom no-repeat, url("../../images/elements-graphiques/plante2.png") left bottom no-repeat;
+            background: url("../../images/elements-graphiques/chats/illustrations/cat1.png") right bottom no-repeat, url("../../images/elements-graphiques/plante2.png") left bottom no-repeat;
             background-size: 100%, 30%;
 
             .content {
@@ -440,6 +440,7 @@
                                     #test {
                                         height: 40px;
                                         width: 40px;
+                                        background-color: red;
                                     }
                                 }
                             }
@@ -539,15 +540,7 @@
                         background-position: center;
                         background-repeat: no-repeat;
                         background-size: 85%;
-                        position: relative;
                         background-color: $sec4-color;
-
-                        img {
-                            position: absolute;
-                            bottom: 0;
-                            height: 140%;
-                            width: 100%;
-                        }
                     }
                 }
 
@@ -569,13 +562,6 @@
                         font-weight: 900;
                         font-family: "santelia-script", sans-serif;
                         color: $sec4-text;
-                    }
-
-                    img {
-                        position: absolute;
-                        bottom: -28px;
-                        height: 200%;
-                        width: 115%;
                     }
                 }
             }
@@ -700,7 +686,7 @@
                     width: 100%;
 
                     position: absolute;
-                    top: 110px;
+                    top: 90px;
                     z-index: 2;
                 }
             }

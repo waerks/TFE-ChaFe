@@ -3,7 +3,11 @@
     .section1 {
 
         .container {
+<<<<<<< HEAD
             background: url("images/elements-graphiques/chats/illustrations/animations/Cat1.gif") 580px bottom no-repeat, url("../../images/elements-graphiques/herbe.png") left bottom no-repeat, url("../../images/elements-graphiques/plante2.png") 40px bottom no-repeat, url("../../images/elements-graphiques/plante1.png") 170px bottom no-repeat, url("../../images/elements-graphiques/plante3.png") 250px bottom no-repeat, url("../../images/elements-graphiques/plante2.png") 350px bottom no-repeat, url("../../images/elements-graphiques/plante3.png") 450px bottom no-repeat;
+=======
+            background: url("../../images/elements-graphiques/chats/illustrations/cat1.png") 580px bottom no-repeat, url("../../images/elements-graphiques/herbe.png") left bottom no-repeat, url("../../images/elements-graphiques/plante2.png") 40px bottom no-repeat, url("../../images/elements-graphiques/plante1.png") 170px bottom no-repeat, url("../../images/elements-graphiques/plante3.png") 250px bottom no-repeat, url("../../images/elements-graphiques/plante2.png") 350px bottom no-repeat, url("../../images/elements-graphiques/plante3.png") 450px bottom no-repeat;
+>>>>>>> parent of 70cee6b (push)
             background-size: 50%, 50%, 10%, 6%, 10%, 10%, 10%;
 
             .content {
@@ -33,7 +37,7 @@
     .section2 {
 
         .container {
-            background: url("../../images/elements-graphiques/chats/illustrations/animations/Cat4.gif") 400px 600px no-repeat, url("../../images/elements-graphiques/grande-fleur.png") right 200px no-repeat, url("../../images/elements-graphiques/fenetre.png") right 180px no-repeat;
+            background: url("../../images/elements-graphiques/chats/illustrations/cat2.png") 400px 600px no-repeat, url("../../images/elements-graphiques/grande-fleur.png") right 200px no-repeat, url("../../images/elements-graphiques/fenetre.png") right 180px no-repeat;
             background-size: 35%, 45%, 45%;
 
             .contentOne {
@@ -154,7 +158,7 @@
         .container {
 
             .maison {
-                background: url("../../images/elements-graphiques/chats/illustrations/animations/Cat2.gif") no-repeat, url("../../images/elements-graphiques/chafe.png;");
+                background: url("../../images/elements-graphiques/chats/illustrations/cat3.png") no-repeat, url("../../images/elements-graphiques/chafe.png;");
                 background-size: 15%, cover;
                 background-position: 600px 420px, center;
 

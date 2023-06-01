@@ -10,26 +10,12 @@
   },
   "devDependencies": {
     "@types/node": "^20.2.1",
-    "gulp": "^4.0.2",
     "sass": "^1.62.1",
     "vite": "^4.0.4"
   },
   "dependencies": {
     "lil-gui": "^0.17.0",
     "three": "^0.148.0",
-    "validate.js": "^0.13.1",
     "vercel": "^28.20.0"
-  },
-  "main": "gulpfile.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/waerks/TFE-ChaFe.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/waerks/TFE-ChaFe/issues"
-  },
-  "homepage": "https://github.com/waerks/TFE-ChaFe#readme",
-  "description": ""
+  }
 }
