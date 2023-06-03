@@ -1,9 +1,12 @@
+import $ from 'jquery'
+window.jQuery = window.$ = $
+
 $(document).ready(function () {
 
     /**
      * FORMULAIRE VALIDETTA
      */
-    $("#formulaire").validetta();
+    // $("#formulaire").validetta();
 
     /**
      * BOUTON SUBMIT
@@ -36,71 +39,67 @@ $(document).ready(function () {
         })
     })
 
-    /**
-     * CAT ONE
-     */
-    $(".cardOne").on("click", function () {
-        let htmlIn = ''
 
-        // CARD CAT
-        htmlIn += '<div class="cardOne card">'
-        htmlIn += '<div class="item1">'
-        htmlIn += '<img src="images/chats/Lilie.jpg" alt="Lilie">'
-        htmlIn += '</div>'
-        htmlIn += '<div class="item2">'
-        htmlIn += '<div class="nom">'
-        htmlIn += '<h3>Lilie</h3>'
-        htmlIn += '</div>'
-        htmlIn += '<div class="description">'
-        htmlIn += '<p>Lilie, the most playful and affectionate cat in the café! With her boundles' +
-                's energy and infinite tenderness, she will melt your heart in an instant.</p>' 
-        htmlIn += '</div>'
-        htmlIn += '<hr>'
-        htmlIn += '<div class="caracteristiques">'
-        htmlIn += '<div class="age">'
-        htmlIn += '<h4>AGE</h4>'
-        htmlIn += '<p>6 yrs.</p>'
-        htmlIn += '</div>'
-        htmlIn += '<div class="gender">'
-        htmlIn += '<h4>GENDER</h4>'
-        htmlIn += '<div id="test"></div>'
-        htmlIn += '</div>'
-        htmlIn += '</div>'
-        htmlIn += '</div>'
-        htmlIn += '<button class="crossOne cross">'
-        htmlIn += '<span>&#10799;</span>'
-        htmlIn += '</button>'
-        htmlIn += '</div>'
-
-        // RESPONSIVE
-        var width = $(window).width();
-        if (width < 640) {
-            $(".catOne").css("height", "600px")
-            $(".catOne").css("width", "300px")
-            $(".catOne").html(htmlIn)
-
-        } else {
-            $(".catOne").css("height", "300px")
-            $(".catOne").css("width", "550px")
-            $(".catOne").html(htmlIn)
-        }
-
-        // CLOSE
-        $(".crossOne").on("click", function () {
-            var htmlOut = ''
-    
-            htmlOut += '<div class="cardOne card">'
-            htmlOut += '<img src="images/chats/Lilie.jpg" alt="Lilie">'
-            htmlOut += '</div>'
-        
-            $(".catOne").html(htmlOut)
-            $(".catOne").css("height", "250px")
-            $(".catOne").css("width", "250px")
-        });
-    });
-
-
-
+/**
+ * CAT ONE
+ */
+$(".cardOne").on("click", function () {
+    let htmlIn = '';
+  
+    // CARD CAT
+    htmlIn += '<div class="cardOne card">';
+    htmlIn += '<div class="item1">';
+    htmlIn += '<img src="assets/Lilie-440b571e.jpg" alt="Lilie">';
+    htmlIn += '</div>';
+    htmlIn += '<div class="item2">';
+    htmlIn += '<div class="nom">';
+    htmlIn += '<h3>Lilie</h3>';
+    htmlIn += '</div>';
+    htmlIn += '<div class="description">';
+    htmlIn += '<p>Lilie, the most playful and affectionate cat in the café! With her boundless energy and infinite tenderness, she will melt your heart in an instant.</p>';
+    htmlIn += '</div>';
+    htmlIn += '<hr>';
+    htmlIn += '<div class="caracteristiques">';
+    htmlIn += '<div class="age">';
+    htmlIn += '<h4>AGE</h4>';
+    htmlIn += '<p>6 yrs.</p>';
+    htmlIn += '</div>';
+    htmlIn += '<div class="gender">';
+    htmlIn += '<h4>GENDER</h4>';
+    htmlIn += '<div id="test"><img src="assets/female-1549b594.png" alt="Female"></div>';
+    htmlIn += '</div>';
+    htmlIn += '</div>';
+    htmlIn += '</div>';
+    htmlIn += '<button class="crossOne cross">';
+    htmlIn += '<span>&#10799;</span>';
+    htmlIn += '</button>';
+  
+    // RESPONSIVE
+    var width = $(window).width();
+    if (width < 640) {
+      $(".catOne").css("height", "600px");
+      $(".catOne").css("width", "300px");
+      $(".catOne").html(htmlIn);
+    } else {
+      $(".catOne").css("height", "300px");
+      $(".catOne").css("width", "550px");
+      $(".catOne").html(htmlIn);
+    }
+  });
+  
+  // CLOSE
+  $(document).on("click", ".crossOne", function () {
+    var htmlOut = '';
+  
+    htmlOut += '<div class="cardOne card">';
+    htmlOut += '<img src="assets/Lilie-440b571e.jpg" alt="Lilie">';
+    htmlOut += '</div>';
+  
+    $(".catOne").html(htmlOut);
+    $(".catOne").css("height", "250px");
+    $(".catOne").css("width", "250px");
+  });
+  
     /**
      * CAT TWO
      */
@@ -110,7 +109,7 @@ $(document).ready(function () {
         // CARD CAT
         htmlIn += '<div class="cardTwo card">'
         htmlIn += '<div class="item1">'
-        htmlIn += '<img src="images/chats/Calypso.jpg" alt="Calypso">'
+        htmlIn += '<img src="assets/Calypso-de7f0be5.jpg" alt="Calypso">'
         htmlIn += '</div>'
         htmlIn += '<div class="item2">'
         htmlIn += '<div class="nom">'
@@ -128,7 +127,7 @@ $(document).ready(function () {
         htmlIn += '</div>'
         htmlIn += '<div class="gender">'
         htmlIn += '<h4>GENDER</h4>'
-        htmlIn += '<div id="test"></div>'
+        htmlIn += '<div id="test"><img src="assets/male-92c36e2d.png" alt="Male"></div>'
         htmlIn += '</div>'
         htmlIn += '</div>'
         htmlIn += '</div>'
@@ -154,7 +153,7 @@ $(document).ready(function () {
             var htmlOut = ''
     
             htmlOut += '<div class="cardTwo card">'
-            htmlOut += '<img src="images/chats/Calypso.jpg" alt="Calypso">'
+            htmlOut += '<img src="assets/Calypso-de7f0be5.jpg" alt="Calypso">'
             htmlOut += '</div>'
     
             $(".catTwo").html(htmlOut)
@@ -172,7 +171,7 @@ $(document).ready(function () {
         // CARD CAT
         htmlIn += '<div class="cardThree card">'
         htmlIn += '<div class="item1">'
-        htmlIn += '<img src="images/chats/Moka.jpg" alt="Moka">'
+        htmlIn += '<img src="assets/Moka-f6349bb5.jpg" alt="Moka">'
         htmlIn += '</div>'
         htmlIn += '<div class="item2">'
         htmlIn += '<div class="nom">'
@@ -190,7 +189,7 @@ $(document).ready(function () {
         htmlIn += '</div>'
         htmlIn += '<div class="gender">'
         htmlIn += '<h4>GENDER</h4>'
-        htmlIn += '<div id="test"></div>'
+        htmlIn += '<div id="test"><img src="assets/female-1549b594.png" alt="Female"></div>'
         htmlIn += '</div>'
         htmlIn += '</div>'
         htmlIn += '</div>'
@@ -216,7 +215,7 @@ $(document).ready(function () {
             var htmlOut = ''
     
             htmlOut += '<div class="cardThree card">'
-            htmlOut += '<img src="images/chats/Moka.jpg" alt="Moka">'
+            htmlOut += '<img src="assets/Moka-f6349bb5.jpg" alt="Moka">'
             htmlOut += '</div>'
         
             $(".catThree").html(htmlOut)
@@ -234,7 +233,7 @@ $(document).ready(function () {
         // CARD CAT
         htmlIn += '<div class="cardFour card">'
         htmlIn += '<div class="item1">'
-        htmlIn += '<img src="images/chats/Nala.jpg" alt="Nala">'
+        htmlIn += '<img src="assets/Nala-0d497dd7.jpg" alt="Nala">'
         htmlIn += '</div>'
         htmlIn += '<div class="item2">'
         htmlIn += '<div class="nom">'
@@ -252,7 +251,7 @@ $(document).ready(function () {
         htmlIn += '</div>'
         htmlIn += '<div class="gender">'
         htmlIn += '<h4>GENDER</h4>'
-        htmlIn += '<div id="test"></div>'
+        htmlIn += '<div id="test"><img src="assets/female-1549b594.png" alt="Female"></div>'
         htmlIn += '</div>'
         htmlIn += '</div>'
         htmlIn += '</div>'
@@ -278,7 +277,7 @@ $(document).ready(function () {
             var htmlOut = ''
     
             htmlOut += '<div class="cardThree card">'
-            htmlOut += '<img src="images/chats/Nala.jpg" alt="Nala">'
+            htmlOut += '<img src="assets/Nala-0d497dd7.jpg" alt="Nala">'
             htmlOut += '</div>'
         
             $(".catFour").html(htmlOut)
@@ -296,7 +295,7 @@ $(document).ready(function () {
         // CARD CAT
         htmlIn += '<div class="cardFive card">'
         htmlIn += '<div class="item1">'
-        htmlIn += '<img src="images/chats/Pixel.jpg" alt="Pixel">'
+        htmlIn += '<img src="assets/Pixel-bfc9db75.jpg" alt="Pixel">'
         htmlIn += '</div>'
         htmlIn += '<div class="item2">'
         htmlIn += '<div class="nom">'
@@ -314,7 +313,7 @@ $(document).ready(function () {
         htmlIn += '</div>'
         htmlIn += '<div class="gender">'
         htmlIn += '<h4>GENDER</h4>'
-        htmlIn += '<div id="test"></div>'
+        htmlIn += '<div id="test"><img src="assets/male-92c36e2d.png" alt="Male"></div>'
         htmlIn += '</div>'
         htmlIn += '</div>'
         htmlIn += '</div>'
@@ -340,7 +339,7 @@ $(document).ready(function () {
             var htmlOut = ''
     
             htmlOut += '<div class="cardFive card">'
-            htmlOut += '<img src="images/chats/Pixel.jpg" alt="Pixel">'
+            htmlOut += '<img src="assets/Pixel-bfc9db75.jpg" alt="Pixel">'
             htmlOut += '</div>'
         
             $(".catFive").html(htmlOut)
@@ -358,7 +357,7 @@ $(document).ready(function () {
         // CARD CAT
         htmlIn += '<div class="cardSix card">'
         htmlIn += '<div class="item1">'
-        htmlIn += '<img src="images/chats/Simbaï.jpg" alt="Simbaï">'
+        htmlIn += '<img src="assets/Simbaï-6d629eea.jpg" alt="Simbaï">'
         htmlIn += '</div>'
         htmlIn += '<div class="item2">'
         htmlIn += '<div class="nom">'
@@ -376,7 +375,7 @@ $(document).ready(function () {
         htmlIn += '</div>'
         htmlIn += '<div class="gender">'
         htmlIn += '<h4>GENDER</h4>'
-        htmlIn += '<div id="test"></div>'
+        htmlIn += '<div id="test"><img src="assets/male-92c36e2d.png" alt="Male"></div>'
         htmlIn += '</div>'
         htmlIn += '</div>'
         htmlIn += '</div>'
@@ -402,7 +401,7 @@ $(document).ready(function () {
             var htmlOut = ''
     
             htmlOut += '<div class="cardSix card">'
-            htmlOut += '<img src="images/chats/Simbaï.jpg" alt="Simbaï">'
+            htmlOut += '<img src="assets/Simbaï-6d629eea.jpg" alt="Simbaï">'
             htmlOut += '</div>'
         
             $(".catSix").html(htmlOut)

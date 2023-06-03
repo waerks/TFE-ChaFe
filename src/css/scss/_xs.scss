@@ -7,6 +7,10 @@
         font-family: "dunbar-text", sans-serif;
     }
 
+    html {
+        scroll-behavior: smooth;
+    }
+
     body {
         margin: 0 auto;
         background-color: $body;
@@ -37,7 +41,7 @@
 
             border: 3px solid $sec1-text;
 
-            background: url("../../images/elements-graphiques/chats/illustrations/cat1.png") right bottom no-repeat, url("../../images/elements-graphiques/plante2.png") left bottom no-repeat;
+            background: url("../images/elements-graphiques/gifs/Cat1.gif") right bottom no-repeat, url("../images/elements-graphiques/plante2.png") left bottom no-repeat;
             background-size: 100%, 30%;
 
             .content {
@@ -172,7 +176,7 @@
         display: grid;
         place-items: center;
 
-        background-image: url('../../images/elements-graphiques/vague.svg'), url("../../images/elements-graphiques/sol.svg"), url("../../images/elements-graphiques/briques.png");
+        background-image: url('../images/elements-graphiques/vague.svg'), url("../images/elements-graphiques/sol.svg"), url("../images/elements-graphiques/briques.png");
         background-position: top left, bottom center, top left;
         background-repeat: no-repeat, no-repeat, no-repeat;
         background-size: contain, contain, 100%;
@@ -182,7 +186,7 @@
             width: 95.5%;
             max-width: 1600px;
             display: flex;
-            background: url("../../images/elements-graphiques/grande-fleur.png") 30px 380px no-repeat;
+            background: url("../images/elements-graphiques/grande-fleur.png") 30px 380px no-repeat;
             background-size: 110%;
 
             position: relative;
@@ -288,7 +292,7 @@
         display: grid;
         place-items: center;
         padding: 50px 0;
-        background-image: url("../../images/elements-graphiques/coffee-min.png");
+        background-image: url("../images/elements-graphiques/coffee-min.png");
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -440,7 +444,6 @@
                                     #test {
                                         height: 40px;
                                         width: 40px;
-                                        background-color: red;
                                     }
                                 }
                             }
@@ -496,7 +499,7 @@
             .mur {
                 height: 450px;
                 width: 100%;
-                background-image: url("../../images/elements-graphiques/papier-peint.png");
+                background-image: url("../images/elements-graphiques/papier-peint.png");
                 background-repeat: repeat-x;
                 background-size: contain;
                 background-color: whitesmoke;
@@ -536,7 +539,7 @@
                         height: 100px;
                         width: 100px;
                         border-radius: 200px;
-                        background-image: url("../../images/kopi/kopi-n.png");
+                        background-image: url("../images/kopi/kopi-n.png");
                         background-position: center;
                         background-repeat: no-repeat;
                         background-size: 85%;
@@ -686,7 +689,7 @@
                     width: 100%;
 
                     position: absolute;
-                    top: 90px;
+                    top: 105px;
                     z-index: 2;
                 }
             }
@@ -694,7 +697,7 @@
             .maison {
                 height: 700px;
                 width: 100%;
-                background-image: url("../../images/elements-graphiques/chafe.png");
+                background-image: url("../images/elements-graphiques/chafe.png");
                 background-repeat: no-repeat;
                 background-size: cover;
                 background-position: -240px;
@@ -728,7 +731,7 @@
                 height: 100%;
                 width: 60%;
                 max-width: 1600px;
-                background-image: url("../../images/elements-graphiques/craquelure.png");
+                background-image: url("../images/elements-graphiques/craquelure.png");
                 background-position: top left;
                 background-size: 100%;
 
@@ -1122,8 +1125,7 @@
                                     height: 35px;
                                     width: 30%;
                                     border: none;
-                                    border-left: 3px solid $sec1-text;
-                                    border-bottom: 3px solid $sec1-text;
+                                    border: 3px solid $sec1-text;
                                     color: $sec1-text;
                                     font-weight: 700;
                                     background: transparent;
@@ -1270,7 +1272,7 @@
                     flex-direction: column;
                     gap: 20px;
 
-                    background-image: url('../../images/elements-graphiques/grand-sac.png'), url('../../images/elements-graphiques/tasse.png'), url('../../images/elements-graphiques/cafetiere.png'), url("../../images/elements-graphiques/petite-fleur.png");
+                    background-image: url('../images/elements-graphiques/grand-sac.png'), url('../images/elements-graphiques/tasse.png'), url('../images/elements-graphiques/cafetiere.png'), url("../images/elements-graphiques/petite-fleur.png");
                     background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
                     background-position: right 220px, left 350px, right bottom, left bottom;
                     background-size: 150px, 100px, 150px, 120px;
@@ -1294,7 +1296,7 @@
         display: grid;
         place-items: center;
 
-        background-image: url('../../images/elements-graphiques/vague.svg'), url("../../images/elements-graphiques/coffee-min-inverse.png");
+        background-image: url('../images/elements-graphiques/vague.svg'), url("../images/elements-graphiques/coffee-min-inverse.png");
         background-position: top left, center center;
         background-repeat: no-repeat no-repeat;
         background-size: contain, cover;

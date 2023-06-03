@@ -46,13 +46,13 @@
 
     // SECTION 2 //
     .section2 {
-        background-image: url('../../images/elements-graphiques/vague.svg'), url("../../images/elements-graphiques/sol.svg"), url('../../images/elements-graphiques/briques.png');
+        background-image: url('../images/elements-graphiques/vague.svg'), url("../images/elements-graphiques/sol.svg"), url('../images/elements-graphiques/briques.png');
         background-position: top left, center 1050px, top left;
         background-repeat: no-repeat, no-repeat, no-repeat;
         background-size: 50%, 100%, 50%;
 
         .container {
-            background: url("../../images/elements-graphiques/chats/illustrations/cat2.png") 340px 670px no-repeat, url("../../images/elements-graphiques/grande-fleur.png") right 200px no-repeat, url("../../images/elements-graphiques/fenetre.png") right 180px no-repeat;
+            background: url("../images/elements-graphiques/gifs/Cat4.gif") 340px 670px no-repeat, url("../images/elements-graphiques/grande-fleur.png") right 200px no-repeat, url("../images/elements-graphiques/fenetre.png") right 180px no-repeat;
             background-size: 35%, 55%, 55%;
 
             .contentOne {
@@ -187,7 +187,7 @@
         .container {
 
             .maison {
-                background: url("../../images/elements-graphiques/chats/illustrations/cat4.png") no-repeat, url("../../images/elements-graphiques/chafe.png");
+                background: url("../images/elements-graphiques/gifs/Cat2.gif") no-repeat, url("../images/elements-graphiques/chafe.png");
                 background-size: 18%, cover;
                 background-position: 500px 420px, center;
 
@@ -234,7 +234,7 @@
                     justify-content: flex-start;
                     padding-top: 130px;
 
-                    background: url("../../images/elements-graphiques/herbe.png") no-repeat left bottom, url("../../images/elements-graphiques/chats/illustrations/cat5.png") no-repeat right bottom, url("../../images/elements-graphiques/plante2.png") no-repeat left bottom;
+                    background: url("../images/elements-graphiques/herbe.png") no-repeat left bottom, url("../images/elements-graphiques/chats/illustrations/cat5.png") no-repeat right bottom, url("../images/elements-graphiques/plante2.png") no-repeat left bottom;
                     background-size: 100%, 90%, 50%;
 
                     h2 {

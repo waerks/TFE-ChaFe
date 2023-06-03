@@ -3,7 +3,7 @@
     .section1 {
 
         .container {
-            background: url("../../images/elements-graphiques/chats/illustrations/cat1.png") right bottom no-repeat, url("../../images/elements-graphiques/plante2.png") left bottom no-repeat, url("../../images/elements-graphiques/plante2.png") left bottom no-repeat, url("../../images/elements-graphiques/plante2.png") 150px bottom no-repeat;
+            background: url("../images/elements-graphiques/gifs/Cat1.gif") right bottom no-repeat, url("../images/elements-graphiques/plante2.png") left bottom no-repeat, url("../images/elements-graphiques/plante2.png") left bottom no-repeat, url("../images/elements-graphiques/plante2.png") 150px bottom no-repeat;
             background-size: 70%, 35%, 20%, 10%;
 
             .content {
@@ -39,7 +39,7 @@
     .section2 {
 
         .container {
-            background: url("../../images/elements-graphiques/grande-fleur.png") right 380px no-repeat, url("../../images/elements-graphiques/fenetre.png") 270px 420px no-repeat;
+            background: url("../images/elements-graphiques/grande-fleur.png") right 380px no-repeat, url("../images/elements-graphiques/fenetre.png") 270px 420px no-repeat;
             background-size: 60%, 55%;
 
             .contentOne {
@@ -286,7 +286,7 @@
                 }
 
                 .texte {
-                    background-image: url('../../images/elements-graphiques/grand-sac.png'), url('../../images/elements-graphiques/tasse.png'), url('../../images/elements-graphiques/cafetiere.png'), url('../../images/elements-graphiques/petite-fleur.png'), url("../../images/elements-graphiques/muffin.png");
+                    background-image: url('../images/elements-graphiques/grand-sac.png'), url('../images/elements-graphiques/tasse.png'), url('../images/elements-graphiques/cafetiere.png'), url('../images/elements-graphiques/petite-fleur.png'), url("../images/elements-graphiques/muffin.png");
                     background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
                     background-position: 330px 130px, 50px 270px, 330px bottom, 30px bottom, 160px 240px;
                     background-size: 150px, 100px, 150px, 150px, 80px;

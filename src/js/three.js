@@ -44,7 +44,6 @@ gltfLoader.load(
     {
         gltf.scene.rotation.y = Math.PI * - 0.5
         scene.add(gltf.scene)
-        console.log(gltf.scene);
     }
 )
 

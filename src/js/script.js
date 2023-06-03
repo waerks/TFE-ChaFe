@@ -1,14 +1,18 @@
+document.addEventListener('DOMContentLoaded', function() {
+
 /**
  * NAVIGATION
  */
 function myFunction() {
     var x = document.getElementById("myTopnav");
     if (x.className === "topnav") {
-        x.className += " responsive";
+      x.className += " responsive";
     } else {
-        x.className = "topnav";
+      x.className = "topnav";
     }
-}
+  }
+
+  document.getElementById("menuIcon").addEventListener("click", myFunction);
 
 /**
    * MODAL DU MENU
@@ -38,3 +42,4 @@ window.onclick = function (event) {
         modal.style.display = "none";
     }
 }
+});

@@ -18,7 +18,7 @@
         <!-- *** LINKS *** -->
         
         <!-- *** ICONS *** -->
-        <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/icon180x180-ebc92d91.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="./assets/icon180x180-ebc92d91.png">
         <link
             rel="icon"
             type="image/png"
@@ -31,7 +31,8 @@
             href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC0AAAAtCAYAAAA6GuKaAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAkhJREFUeNrMWYuNgzAMRZmAERiBDcoGzQbXEW6E3ASMgG4C2gnoTcBtABtwG3AgBcm1nP+nWIooBCcmfnl23KLwl3pr/daEh24p9Vr5O5vsBq+y3Rx1BdBtcxq9gtY76k5Ad8plMEdGrw5urgndymVy5mn0RfEhNvIRoBskE7FaECKVxG0nr3AlR4NuEqmISSFEbsTzRcJCp5tUPsFEA7GpVk2b0Oou4L5JiWmI58fWvpEXDvnb2pe8Uv277h3cX3NRXS2ftej5CPpqtMILCEg3pJNEGjQ5jnINMJaiugZRYxlCfbYCV7SLNOboGlmZx0of8hPJ6EdKXFeeEdAlQi6xjU65aZyozwUeV4VLCxBUhGYz1bKfwm0y6lsIqjsMxqGZa7xEeSqJF3VUR4XtUfPB1Ic5UR/zgMad2KCF4VlpeGePmr8KlvI2Wkd1T+L9p8c7UanPhupaBI2S2ISTIYhEpT6XTVIF9ltRH/OgukGuLGXAbBhrVqxwJ8eMRn2Y6gRwdR8IuwHk2TwW9ZmoTgQaLRAMoqQKKbK64KyPBVBdKnkaTv3G0hUVpY48o49QHeqlBzmAQhNCfapNsYBNGFqv4KC8NljkOUbpFPW2OgEkSjQurBMKX6prirziRX1JTxOhqQPTYE2X7KSWGWV93MZo3SkllzhRX5ZaRGA0znqAjXLEo+BxeTOeVRDhZ6U6L6+/m+qsqI+djOoo6ptxAsdOSHVOhZyzUB0V6JR/32k73ywvhXxmWZA5E0QaVRh/nMzol1PTvwADADesQK12ebNFAAAAAElFTkSuQmCC">
         <!-- *** TITLE *** -->
         <title>Chafé | Bar à chats</title>
-      <link rel="stylesheet" href="./assets/css/index-0c1a92b4.css">
+      <script type="module" crossorigin src="./assets/main-880623f6.js"></script>
+      <link rel="stylesheet" href="./assets/index-93292303.css">
     </head>
     <body>
         
@@ -40,12 +41,12 @@
             <div class="container borderOne">
                 <div class="content borderTwo">
                     <nav class="topnav" id="myTopnav">
-                        <a id="home" href="#homeCat" class="active"><img src="./assets/images/minimal-brun-74965cf2.png" alt="Home"></a>
+                        <a id="home" href="#homeCat" class="active"><img src="./assets/minimal-brun-74965cf2.png" alt="Home"></a>
                         <a href="#aboutUs">About Us</a>
                         <a href="#ourCats">Our Cats</a>
                         <a href="#ourArtisan">Our Artisan</a>
-                        <a href="page/reserve.html">Reserve</a>
-                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <a href="reserve.html">Book</a>
+                        <a href="javascript:void(0);" class="icon" id="menuIcon">
                             <i class="fa fa-bars">
                                 &#10247;
                             </i>
@@ -53,7 +54,7 @@
                     </nav>
                     <div class="titre">
                         <div class="chafe">
-                            <img src="./assets/images/logo-brun-c1fee000.png" alt="">
+                            <img src="./assets/logo-brun-c1fee000.png" alt="">
                         </div>
                         <div class="soustitre">
                             <span id="pointOne"></span>
@@ -488,11 +489,11 @@
                                         <!-- ASK -->
                                         <h3>We have</h3>
                                         <div class="ask">
-                                            <img src="./assets/images/sans-gluten-569e8b2c.png" alt="Gluten free">
-                                            <img src="./assets/images/halal-b0630ab6.png" alt="Halal">
-                                            <img src="./assets/images/lait-d-avoine-02cbbd2e.png" alt="Oats milk">
-                                            <img src="./assets/images/lait-de-soja-cca365e7.png" alt="Soy milk">
-                                            <img src="./assets/images/lait-d-amande-3a6883af.png" alt="Almond milk">
+                                            <img src="./assets/sans-gluten-569e8b2c.png" alt="Gluten free">
+                                            <img src="./assets/halal-b0630ab6.png" alt="Halal">
+                                            <img src="./assets/lait-d-avoine-02cbbd2e.png" alt="Oats milk">
+                                            <img src="./assets/lait-de-soja-cca365e7.png" alt="Soy milk">
+                                            <img src="./assets/lait-d-amande-3a6883af.png" alt="Almond milk">
                                         </div>
                                     </div>
                                 </div>
@@ -514,32 +515,34 @@
                 <div class="content">
                     <div class="catOne border">
                         <div class="cardOne card">
-                            <img src="./assets/images/Lilie-440b571e.jpg" alt="Lilie">
+                            <img src="./assets/Lilie-440b571e.jpg" alt="Lilie">
+                            <img style="display: none;" src="./assets/female-1549b594.png" alt="Female">
+                            <img style="display: none;" src="./assets/male-92c36e2d.png" alt="Male">
                         </div>
                     </div>
                     <div class="catTwo border">
                         <div class="cardTwo card">
-                            <img src="./assets/images/Calypso-de7f0be5.jpg" alt="Calypso">
+                            <img src="./assets/Calypso-de7f0be5.jpg" alt="Calypso">
                         </div>
                     </div>
                     <div class="catThree border">
                         <div class="cardThree card">
-                            <img src="./assets/images/Moka-f6349bb5.jpg" alt="Moka">
+                            <img src="./assets/Moka-f6349bb5.jpg" alt="Moka">
                         </div>
                     </div>
                     <div class="catFour border">
                         <div class="cardFour card">
-                            <img src="./assets/images/Nala-0d497dd7.jpg" alt="Nala">
+                            <img src="./assets/Nala-0d497dd7.jpg" alt="Nala">
                         </div>
                     </div>
                     <div class="catFive border">
                         <div class="cardFive card">
-                            <img src="./assets/images/Pixel-bfc9db75.jpg" alt="Pixel">
+                            <img src="./assets/Pixel-bfc9db75.jpg" alt="Pixel">
                         </div>
                     </div>
                     <div class="catSix border">
                         <div class="cardSix card">
-                            <img src="./assets/images/Simbaï-6d629eea.jpg" alt="Simbaï">
+                            <img src="./assets/Simbaï-6d629eea.jpg" alt="Simbaï">
                         </div>
                     </div>
                 </div>
@@ -562,9 +565,9 @@
                     </div>
                 </div>
                 <div class="elementsGraphiques">
-                    <img src="./assets/images/cafetiere-7612b189.png" alt="" id="cafetiere">
-                    <img src="./assets/images/grand-sac-10bab7f7.png" alt="" id="grandSac">
-                    <img src="./assets/images/petit-sac-7f0abfb8.png" alt="" id="petitSac">
+                    <img src="./assets/cafetiere-7612b189.png" alt="" id="cafetiere">
+                    <img src="./assets/grand-sac-10bab7f7.png" alt="" id="grandSac">
+                    <img src="./assets/petit-sac-7f0abfb8.png" alt="" id="petitSac">
                 </div>
                 <div class="kopi">
                     <div class="description">
@@ -577,7 +580,7 @@
                     </div>
                     <div class="btnKopi">
                         <button type="submit">
-                            <a href="page/kopi.html">Discover him</a>
+                            <a href="kopi.html">Discover him</a>
                         </button>
                     </div>
                 </div>
@@ -588,10 +591,10 @@
         <section id="cafe" class="section5">
             <div class="container">
                 <div class="chat">
-                    <img src="./assets/images/cat3-195b847a.png" alt="">
+                    <img src="./assets/Cat3-ae9501a7.gif" alt="">
                 </div>
                 <div class="maison">
-                    <a href="page/canvas.html">aaa</a>
+                    <a href="canvas.html">aaa</a>
                 </div>
             </div>
             <footer>
@@ -630,10 +633,9 @@
         </section>
 
         <!-- *** SCRIPTS *** -->
-        <script src="js/jquery-3.6.1.min.js"></script>
-        <script src="js/js.cookie.min.js"></script>
-        <script src="js/gsap.min.js"></script>
-        <script src="js/script.js"></script>
-        <script src="js/script-jquery.js"></script>
+        <script type="module" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        
+        
+        
     </body>
 </html>

@@ -20,31 +20,40 @@ export default defineConfig({
         outDir,
         emptyOutDir: true,
         sourcemap: true,
+        chunkSizeWarningLimit: 1000,
         rollupOptions: {
             input: {
                 main: resolve(root, 'index.html'),
-                reserve: resolve(root, 'page/reserve.html'),
-                kopi: resolve(root, 'page/kopi.html'),
-                canvas: resolve(root, 'page/canvas.html')
+                reserve: resolve(root, 'reserve.html'),
+                kopi: resolve(root, 'kopi.html'),
+                canvas: resolve(root, 'canvas.html')
             },
             output: {
-                chunkFileNames: 'assets/js/[name]-[hash].js',
-                entryFileNames: 'assets/js/[name]-[hash].js',
+                // chunkFileNames: 'assets/js/[name]-[hash].js',
+                // entryFileNames: 'assets/js/[name]-[hash].js',
                 
                 assetFileNames: ({name}) => {
                   if (/\.(gif|jpe?g|png|svg)$/.test(name ?? '')){
-                      return 'assets/images/[name]-[hash][extname]';
+                      return 'assets/[name]-[hash][extname]';
                   }
                   
                   if (/\.css$/.test(name ?? '')) {
-                      return 'assets/css/[name]-[hash][extname]';   
+                      return 'assets/[name]-[hash][extname]';   
                   }
+
+                  if (/\.js$/.test(name ?? '')) {
+                    return 'assets/[name]-[hash][extname]';   
+                }
          
                   // default value
                   // ref: https://rollupjs.org/guide/en/#outputassetfilenames
                   return 'assets/[name]-[hash][extname]';
                 },
-            }
+            },
+            globals: {
+                jquery: 'window.jQuery',
+                jquery: 'window.$'
+             }
         }
     }
 })
