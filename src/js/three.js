@@ -4,6 +4,7 @@ import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js'
 import { DRACOLoader } from 'three/examples/jsm/loaders/DRACOLoader.js'
 import * as dat from 'lil-gui'
 
+
 /**
  * Base
  */
@@ -28,6 +29,11 @@ dracoLoader.setDecoderPath('/draco/')
 const gltfLoader = new GLTFLoader()
 gltfLoader.setDRACOLoader(dracoLoader)
 
+
+// Loading
+const loading = document.getElementById("loading")
+const content = document.getElementById("webgl")
+
 /**
  * Envrinonment map
  */
@@ -44,6 +50,15 @@ gltfLoader.load(
     {
         gltf.scene.rotation.y = Math.PI * - 0.5
         scene.add(gltf.scene)
+
+                // Modèle chargé avec succès, masquer le chargement
+                loading.style.display = "none"
+                content.style.display = "block"
+        
+                // Obtenir le mixer pour l'animation (si applicable)
+                mixer = new THREE.AnimationMixer(gltf.scene)
+                const action = mixer.clipAction(gltf.animations[0])
+                action.play()
     }
 )
 

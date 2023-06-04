@@ -17,12 +17,30 @@
         position: relative;
     }
 
+    // LOADING //
+    #loading {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #ffe4c4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 999;
+    }
+
     // WEBGL //
     .webgl {
         position: fixed;
         top: 0;
         left: 0;
         outline: none;
+    }
+
+    #webgl {
+        display: none;
     }
 
     // SECTION 1 //
@@ -1487,6 +1505,7 @@
                     position: absolute;
                     top: 0;
                     left: 0;
+                    z-index: 9999;
 
                     a:not(:first-child),
                     a:not(:last-child) {

@@ -1,9 +1,9 @@
 document.addEventListener('DOMContentLoaded', function() {
 
-/**
- * NAVIGATION
- */
-function myFunction() {
+  /**
+   * NAVIGATION
+   */
+  function myFunction() {
     var x = document.getElementById("myTopnav");
     if (x.className === "topnav") {
       x.className += " responsive";
@@ -13,6 +13,7 @@ function myFunction() {
   }
 
   document.getElementById("menuIcon").addEventListener("click", myFunction);
+
 
 /**
    * MODAL DU MENU
