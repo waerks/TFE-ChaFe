@@ -79,10 +79,12 @@ $(".cardOne").on("click", function () {
     if (width < 640) {
       $(".catOne").css("height", "600px");
       $(".catOne").css("width", "300px");
+      $(".catOne").css("border", "3px solid #FFFFFF");
       $(".catOne").html(htmlIn);
     } else {
       $(".catOne").css("height", "300px");
       $(".catOne").css("width", "550px");
+      $(".catOne").css("border", "3px solid #FFFFFF");
       $(".catOne").html(htmlIn);
     }
   });
@@ -141,10 +143,12 @@ $(".cardOne").on("click", function () {
         if (width < 640) {
             $(".catTwo").css("height", "600px")
             $(".catTwo").css("width", "300px")
+            $(".catOne").css("border", "3px solid #FFFFFF");
             $(".catTwo").html(htmlIn)
         } else {
             $(".catTwo").css("height", "300px")
             $(".catTwo").css("width", "550px")
+            $(".catOne").css("border", "3px solid #FFFFFF");
             $(".catTwo").html(htmlIn)
         }
 
@@ -203,10 +207,12 @@ $(".cardOne").on("click", function () {
         if (width < 640) {
             $(".catThree").css("height", "600px")
             $(".catThree").css("width", "300px")
+            $(".catOne").css("border", "3px solid #FFFFFF");
             $(".catThree").html(htmlIn)
         } else {
             $(".catThree").css("height", "300px")
             $(".catThree").css("width", "550px")
+            $(".catOne").css("border", "3px solid #FFFFFF");
             $(".catThree").html(htmlIn)
         }
 
@@ -265,10 +271,12 @@ $(".cardOne").on("click", function () {
         if (width < 640) {
             $(".catFour").css("height", "600px")
             $(".catFour").css("width", "300px")
+            $(".catOne").css("border", "3px solid #FFFFFF");
             $(".catFour").html(htmlIn)
         } else {
             $(".catFour").css("height", "300px")
             $(".catFour").css("width", "550px")
+            $(".catOne").css("border", "3px solid #FFFFFF");
             $(".catFour").html(htmlIn)
         }
 
@@ -327,10 +335,12 @@ $(".cardOne").on("click", function () {
         if (width < 640) {
             $(".catFive").css("height", "600px")
             $(".catFive").css("width", "300px")
+            $(".catOne").css("border", "3px solid #FFFFFF");
             $(".catFive").html(htmlIn)
         } else {
             $(".catFive").css("height", "300px")
             $(".catFive").css("width", "550px")
+            $(".catOne").css("border", "3px solid #FFFFFF");
             $(".catFive").html(htmlIn)
         }
 
@@ -389,10 +399,12 @@ $(".cardOne").on("click", function () {
         if (width < 640) {
             $(".catSix").css("height", "600px")
             $(".catSix").css("width", "300px")
+            $(".catOne").css("border", "3px solid #FFFFFF");
             $(".catSix").html(htmlIn)
         } else {
             $(".catSix").css("height", "300px")
             $(".catSix").css("width", "550px")
+            $(".catOne").css("border", "3px solid #FFFFFF");
             $(".catSix").html(htmlIn)
         }
 

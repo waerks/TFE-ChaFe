@@ -158,12 +158,14 @@
             }
 
             .maison {
-                background: url("../images/elements-graphiques/gifs/Cat2.gif") no-repeat, url("../images/elements-graphiques/chafe.png");
+                background: url("../images/elements-graphiques/gifs/Cat2.gif") no-repeat, url("../images/elements-graphiques/click.gif");
                 background-size: 25%, cover;
                 background-position: 350px 400px, center;
 
                 a {
-                    width: 300px;
+                    height: 248px;
+                    width: 153px;
+                    left: 8%;
                 }
             }
         }

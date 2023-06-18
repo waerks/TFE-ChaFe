@@ -73,7 +73,7 @@ scene.add(pointLightOne)
 // const pointLightOneHelper = new THREE.PointLightHelper(pointLightOne, 1)
 // scene.add(pointLightOneHelper)
 
-const pointLightTwo = new THREE.PointLight('#FFB272', 400)
+const pointLightTwo = new THREE.PointLight('#FFB272', 100)
 scene.add(pointLightTwo)
 // const pointLightTwoHelper = new THREE.PointLightHelper(pointLightTwo, 1)
 // scene.add(pointLightTwoHelper)
